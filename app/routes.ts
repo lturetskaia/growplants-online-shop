@@ -3,7 +3,6 @@ import {
   index,
   route,
   prefix,
-  layout
 } from "@react-router/dev/routes";
 
 export default [
@@ -11,7 +10,9 @@ export default [
   route("about", "routes/about.tsx"),
 
   ...prefix("products", [
-    index("routes/products.tsx"),
+    route("house-plants", "routes/house-plants.tsx"),
+    route("garden-plants", "routes/garden-plants.tsx"),
+    route("pots-and-planters", "routes/pots-and-planters.tsx"),
     route(":productId", "routes/product.tsx"),
   ]),
 ] satisfies RouteConfig;
