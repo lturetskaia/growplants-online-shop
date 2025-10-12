@@ -7,9 +7,11 @@ export default function Navbar() {
   return (
     <NavB expand="lg" className="bg-body-tertiary">
       <Container>
-        
         <NavB.Toggle aria-controls="basic-NavB-nav" />
-        <NavB.Brand href="/">GrowPlants</NavB.Brand>
+        <NavB.Brand href="/">
+          <img src="/icon.png" className="nav-icon"/>
+          <span>GrowPlants</span>
+        </NavB.Brand>
         <NavB.Collapse id="basic-NavB-nav">
           <Nav className="me-auto" variant="underline">
             <Nav.Link as={NavLink} to="/">
@@ -31,7 +33,6 @@ export default function Navbar() {
             <img className="nav-icon" src="/shopping-cart-icon.svg" />
           </NavB.Brand>
         </div>
-        
       </Container>
     </NavB>
   );

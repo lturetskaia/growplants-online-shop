@@ -4,7 +4,7 @@ body {
 }
 
 main {
-padding: 3rem 0 0 0;
+  padding: 3rem 0 0 0;
 }
 
 main img {
@@ -13,6 +13,23 @@ main img {
   margin: auto;
   max-width: 200px;
 }
+
+.bg-body-tertiary {
+  background-color: rgb(231, 231, 231)!important;
+}
+
+nav span {
+  padding-left: 2px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: rgb(4, 79, 54);
+}
+
+a.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
 .navbar {
   padding: 0;
 }
