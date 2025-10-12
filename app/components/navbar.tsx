@@ -7,6 +7,7 @@ export default function Navbar() {
   return (
     <NavB expand="lg" className="bg-body-tertiary">
       <Container>
+        
         <NavB.Toggle aria-controls="basic-NavB-nav" />
         <NavB.Brand href="/">GrowPlants</NavB.Brand>
         <NavB.Collapse id="basic-NavB-nav">
@@ -25,9 +26,12 @@ export default function Navbar() {
             </Nav.Link>
           </Nav>
         </NavB.Collapse>
-        <NavB.Brand href="/">
-          <img className="nav-icon" src="/shopping-cart-icon.svg" />
-        </NavB.Brand>
+        <div>
+          <NavB.Brand href="/cart">
+            <img className="nav-icon" src="/shopping-cart-icon.svg" />
+          </NavB.Brand>
+        </div>
+        
       </Container>
     </NavB>
   );

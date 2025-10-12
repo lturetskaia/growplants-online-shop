@@ -3,12 +3,13 @@ body {
   font-size: 1.1rem;
 }
 .navbar {
-  padding: 0.8rem 0;
+  padding: 0;
 }
 .navbar-nav {
   gap: 1.5rem;
   margin-left: auto;
   margin-right: auto;
+  padding: 0.8rem 0;
 }
 
 .nav-icon {
