@@ -49,7 +49,10 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
+      
     </>
   );
 }
@@ -72,7 +75,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
 
   return (
       <main className="container mx-auto">
-        <img src='flower-404.png'></img>
+        <img src='flower-404.png' className="error-image"></img>
         <h1 className="text-center bold">{message}</h1>
         <p className="text-center">{details}</p>
         {stack && (
