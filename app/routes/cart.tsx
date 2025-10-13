@@ -11,6 +11,6 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function About() {
-  return <div>About Page</div>;
+export default function Cart() {
+  return <div>My Cart</div>;
 }
