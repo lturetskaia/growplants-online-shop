@@ -1,28 +1,20 @@
-export default function Products(){
-    return <ul className="products">
-        <li className="product-card">
-            <img src="/products/house-plants/monstera-albo.jpg" alt="" className="product-image"/>
-            <h3>Plant 1</h3>
-            <p>price</p>
-            <button>Add to cart</button>
-        </li>
-        <li className="product-card">
-            <img src="/products/house-plants/monstera-albo.jpg" alt="" className="product-image"/>
-            <h3>Plant 1</h3>
-            <p>price</p>
-            <button>Add to cart</button>
-        </li>
-        <li className="product-card">
-            <img src="/products/house-plants/monstera-albo.jpg" alt="" className="product-image"/>
-            <h3>Plant 1</h3>
-            <p>price</p>
-            <button>Add to cart</button>
-        </li>
-        <li className="product-card">
-            <img src="/products/house-plants/monstera-albo.jpg" alt="" className="product-image"/>
-            <h3>Plant 1</h3>
-            <p>price</p>
-            <button>Add to cart</button>
-        </li>
+import ProductCard from "./product-card";
+// import productData from "../../backend/data/products.json"
+import productList from "./productList";
+
+export default function Products() {
+  return (
+    <ul className="products">
+      {productList.map((product) => (
+        <ProductCard
+          key={product.id}
+          id={product.id}
+          name={product.name}
+          price={product.price}
+          isStock={product.isStock}
+          image={product.image}
+        />
+      ))}
     </ul>
+  );
 }

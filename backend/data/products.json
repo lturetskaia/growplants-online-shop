@@ -6,9 +6,9 @@
     "name": "Monstera Albo",
     "description": "The Monstera Albo is a highly coveted and stunning plant, celebrated for its unique variegated foliage. Each glossy, heart-shaped leaf is a work of art, featuring striking patterns of deep green and pure white, ensuring no two leaves are exactly alike. This rare beauty adds a touch of sophisticated elegance and a tropical vibe to any indoor space. As it matures, the leaves develop the iconic 'fenestrations' or natural splits, adding to its dramatic appeal. Perfect for experienced plant enthusiasts looking for a show-stopping statement piece, the Monstera Albo thrives in bright, indirect light and appreciates consistent humidity. Elevate your plant collection with this exquisite and eye-catching specimen.",
     "quantity": 100,
-    "price": 15.50,
+    "price": 15.5,
     "isStock": true,
-    "image":"monstera-albo.jpg"
+    "image": "monstera-albo.jpg"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "quantity": 200,
     "price": 8.99,
     "isStock": true,
-    "image":"epiprenum-aureum.jpg"
+    "image": "epiprenum-aureum.jpg"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "quantity": 100,
     "price": 10.99,
     "isStock": true,
-    "image":"calathea-makoyana.jpg"
+    "image": "calathea-makoyana.jpg"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "quantity": 100,
     "price": 25.99,
     "isStock": true,
-    "image":"ficus-lyrata.png"
+    "image": "ficus-lyrata.png"
   },
   {
     "id": 5,
@@ -52,9 +52,9 @@
     "quantity": 100,
     "price": 17.99,
     "isStock": true,
-    "image":"ficus-tineke.png"
+    "image": "ficus-tineke.png"
   },
-   {
+  {
     "id": 6,
     "category": "indoor",
     "type": "fittonia",
@@ -63,9 +63,9 @@
     "quantity": 100,
     "price": 10.99,
     "isStock": true,
-    "image":"fittonia-red-tiger.png"
+    "image": "fittonia-red-tiger.png"
   },
-   {
+  {
     "id": 7,
     "category": "indoor",
     "type": "alocasia",
@@ -74,9 +74,9 @@
     "quantity": 100,
     "price": 15.99,
     "isStock": true,
-    "image":"alocasia-dragon-silver.png"
+    "image": "alocasia-dragon-silver.png"
   },
-   {
+  {
     "id": 8,
     "category": "indoor",
     "type": "cactus",
@@ -85,9 +85,9 @@
     "quantity": 100,
     "price": 7.99,
     "isStock": true,
-    "image":"opuntia-microdasys.png"
+    "image": "opuntia-microdasys.png"
   },
-   {
+  {
     "id": 9,
     "category": "indoor",
     "type": "cactus",
@@ -96,9 +96,9 @@
     "quantity": 100,
     "price": 8.99,
     "isStock": true,
-    "image":"mammillaria-hahniana.png"
+    "image": "mammillaria-hahniana.png"
   },
-   {
+  {
     "id": 10,
     "category": "indoor",
     "type": "cactus",
@@ -107,8 +107,8 @@
     "quantity": 100,
     "price": 55.99,
     "isStock": true,
-    "image":"cereus-repuvianus.png"
-  }, 
+    "image": "cereus-repuvianus.png"
+  },
   {
     "id": 11,
     "category": "indoor",
@@ -118,6 +118,6 @@
     "quantity": 100,
     "price": 20.99,
     "isStock": true,
-    "image":"croton-variegated.png"
+    "image": "croton-variegated.png"
   }
 ]
