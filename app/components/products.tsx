@@ -1,5 +1,4 @@
-import ProductCard from "./product-card";
-// import productData from "../../backend/data/products.json"
+import ProductCard from "./productCard";
 import productList from "./productList";
 
 export default function Products() {
@@ -15,6 +14,9 @@ export default function Products() {
           image={product.image}
         />
       ))}
+      <li className="product-card empty"></li>
+      <li className="product-card empty"></li>
+      <li className="product-card empty"></li>
     </ul>
   );
 }
