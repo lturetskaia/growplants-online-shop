@@ -1,5 +1,5 @@
 import ProductCard from "./productCard";
-import productList from "./productList";
+import productList from "../../backend/data/productList";
 
 export default function Products() {
   return (

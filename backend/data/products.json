@@ -115,9 +115,9 @@
     "type": "croton",
     "name": "Codiaeum Variegatum (Croton Plant)",
     "description": "The Codiaeum Variegatum, commonly known as the Croton Plant, is a breathtaking explosion of color that instantly injects tropical vibrancy into any room. Famous for its incredibly diverse and vividly patterned foliage, Crotons display a brilliant spectrum of red, orange, yellow, green, and even purple hues, often splashed and marbled across each leaf. The intensity of its colors deepens with ample bright, direct sunlight, making it a spectacular living art piece. With various leaf shapes, from broad and oval to long and narrow, each Croton is a unique spectacle. While it appreciates consistent humidity and warmth, the Croton is a rewarding plant for those seeking a bold, colorful statement that brings an unmistakable exotic flair to their interior decor",
-    "quantity": 100,
+    "quantity": 0,
     "price": 20.99,
-    "isStock": true,
+    "isStock": false,
     "image": "croton-variegated.png"
   }
 ]

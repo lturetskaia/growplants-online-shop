@@ -17,6 +17,7 @@ export default function ProductCard({
 }: ProductItem) {
   const imagePath = `/products/house-plants/${image}`;
   const altText = `The image of ${name}`;
+  console.log(name, isStock);
 
   return (
     <li className="product-card">
@@ -25,8 +26,10 @@ export default function ProductCard({
         <h3>{name}</h3>
       </div>
       <div>
-        <p className="product-price">{price} &pound;</p>
-        <Button variant="outline-success">Add to cart</Button>
+        <p className="product-price">{price.toFixed(2)} &pound;</p>
+        <Button variant="outline-success" className={isStock ? "" : "disabled"}>
+          {isStock ? "Add to cart" : "Out of stock"}
+        </Button>
       </div>
     </li>
   );
