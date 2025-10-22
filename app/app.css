@@ -4,18 +4,43 @@ body {
 }
 
 main {
-  padding: 3rem 0 0 0;
+  padding: 3rem 0;
+  width: 80%;
+  max-width: 1300px;
+  margin: auto;
 }
 
 main img {
   display: block;
   align-self: center;
   margin: auto;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin: 10px 0;
+  color: rgb(4, 79, 54);
+  text-align: center;
+  padding: 10px;
+}
+
+.product-price {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  margin: 17px 0;
+  text-align: center;
+}
+
+.btn-outline-success {
+  --bs-btn-active-bg: #146941;
+}
+
+.error-image {
   max-width: 200px;
 }
 
 .bg-body-tertiary {
-  background-color: rgb(231, 231, 231)!important;
+  background-color: rgb(231, 231, 231) !important;
 }
 
 nav span {
@@ -42,4 +67,48 @@ a.navbar-brand {
 
 .nav-icon {
   height: 2.2rem;
+}
+
+.products {
+  display: flex;
+  width: auto;
+  /* width: 100%; */
+  justify-content: space-between;
+  align-items: normal;
+  list-style: none;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid rgb(231, 231, 231);
+  width: 50%;
+  flex-grow: 1;
+  align-self: stretch;
+  max-width: 300px;
+  min-width: 200px;
+  max-height: 100%;
+  padding-bottom: 1rem;
+}
+
+.empty {
+  height: 0;
+  border-color: transparent;
+}
+
+.product-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.product-card button {
+  display: block;
+  margin: auto;
 }
