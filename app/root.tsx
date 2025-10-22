@@ -11,7 +11,9 @@ import type { Route } from "./+types/root";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./app.css";
-import Navbar from "./components/navbar";
+import Navbar from "../features/Navbar";
+import store from "../store/reduxStore";
+import { Provider } from "react-redux";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -47,13 +49,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return (
-    <>
+    <Provider store={store}>
       <Navbar />
       <main>
         <Outlet />
       </main>
-      
-    </>
+    </Provider>
   );
 }
 
@@ -74,15 +75,15 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   }
 
   return (
-      <main className="container mx-auto">
-        <img src='flower-404.png' className="error-image"></img>
-        <h1 className="text-center bold">{message}</h1>
-        <p className="text-center">{details}</p>
-        {stack && (
-          <pre className="w-full p-4 overflow-x-auto">
-            <code>{stack}</code>
-          </pre>
-        )}
-      </main>
+    <main className="container mx-auto">
+      <img src="flower-404.png" className="error-image"></img>
+      <h1 className="text-center bold">{message}</h1>
+      <p className="text-center">{details}</p>
+      {stack && (
+        <pre className="w-full p-4 overflow-x-auto">
+          <code>{stack}</code>
+        </pre>
+      )}
+    </main>
   );
 }

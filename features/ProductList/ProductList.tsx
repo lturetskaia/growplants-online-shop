@@ -1,7 +1,7 @@
-import ProductCard from "./productCard";
+import ProductCard from "../ProductCard";
 import productList from "../../backend/data/productList";
 
-export default function Products() {
+export default function ProductList() {
   return (
     <ul className="products">
       {productList.map((product) => (

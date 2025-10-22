@@ -17,7 +17,6 @@ export default function ProductCard({
 }: ProductItem) {
   const imagePath = `/products/house-plants/${image}`;
   const altText = `The image of ${name}`;
-  console.log(name, isStock);
 
   return (
     <li className="product-card">
