@@ -13,5 +13,6 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function HousePlants() {
-  return <ProductList/>;
+
+  return <ProductList category = "indoor"/>;
 }

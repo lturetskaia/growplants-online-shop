@@ -1,22 +1,43 @@
+import type { RootState } from "store/reduxStore";
 import ProductCard from "../ProductCard";
-import productList from "../../backend/data/productList";
+import { useAppSelector } from "store/hooks";
 
-export default function ProductList() {
-  return (
-    <ul className="products">
-      {productList.map((product) => (
-        <ProductCard
-          key={product.id}
-          id={product.id}
-          name={product.name}
-          price={product.price}
-          isStock={product.isStock}
-          image={product.image}
-        />
-      ))}
-      <li className="product-card empty"></li>
-      <li className="product-card empty"></li>
-      <li className="product-card empty"></li>
-    </ul>
-  );
+export default function ProductList({ category }: { category: string }) {
+  let productData;
+
+  if (category === "tools") {
+    // get the tools slice
+  } else {
+    //filter plants by category
+    productData = useAppSelector(
+      (state: RootState) => state.plantProducts
+    ).filter((product) => product.category === category);
+  }
+
+  let content = <p> No items have been found for this category!</p>;
+
+  if (productData && productData.length > 0) {
+    content = (
+      <ul className="products">
+        {productData.map((product) => (
+          <ProductCard
+            key={product.id}
+            id={product.id}
+            name={product.name}
+            price={product.price}
+            isStock={product.isStock}
+            image={product.image}
+          />
+        ))}
+        <li className="product-card empty"></li>
+        <li className="product-card empty"></li>
+        <li className="product-card empty"></li>
+      </ul>
+    );
+  }
+
+  console.log(productData);
+  console.log(category);
+
+  return <>{content}</>;
 }
