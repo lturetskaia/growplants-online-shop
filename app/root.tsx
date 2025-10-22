@@ -12,7 +12,7 @@ import type { Route } from "./+types/root";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./app.css";
 import Navbar from "../features/Navbar";
-import store from "../store/reduxStore";
+import {store} from "../store/reduxStore";
 import { Provider } from "react-redux";
 
 export const links: Route.LinksFunction = () => [

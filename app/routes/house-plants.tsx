@@ -1,5 +1,5 @@
 import type { Route } from "../+types/root";
-import ProductList from "../../features/ProductList/ProductList";
+import ProductList from "../../features/productList/ProductList";
 
 export function meta({}: Route.MetaArgs) {
   return [
