@@ -20,7 +20,7 @@ export default function ProductCard({
 }: ProductItem) {
   const imagePath = `/products/${category}/${image}`;
   const altText = `The image of ${name}`;
-  const urlPath = `/products/${id}`
+  const urlPath = `/products/${category}/${id}`
 
   return (
     <li className="product-card">
