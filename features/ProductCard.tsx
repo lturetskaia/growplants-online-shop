@@ -23,7 +23,7 @@ export default function ProductCard({
   return (
     <li className="product-card">
       <div>
-        <img src={imagePath} alt={altText} className="product-image" />
+        <img src={imagePath} alt={altText} className="product-image" loading="lazy"/>
         <h3>{name}</h3>
       </div>
       <div>

@@ -258,7 +258,7 @@
     "type": "primula",
     "name": "Primula 'Cottage Cream'",
     "description": "Primula 'Cottage Cream' offers a delightful welcome to the spring garden with its charming, soft-hued flowers. This hardy perennial forms low rosettes of deep green leaves, above which rise clusters of double, creamy-yellow blooms. The ruffled, tightly packed petals give the flowers a luxurious texture, reminiscent of traditional cottage garden favourites. Ideal for planting in the front of borders, rock gardens, or in pots, 'Cottage Cream' provides reliable, early colour. It thrives in moist, well-drained soil in partial shade, bringing a gentle, vintage elegance to your outdoor space.",
-    "quantity": 0,
+    "quantity":100,
     "price": 5.50,
     "isStock": true,
     "image": "primula-cottage-cream.png"
@@ -266,23 +266,68 @@
   {
     "id": 25,
     "category": "outdoor-plants",
-    "type": "",
-    "name": "",
-    "description": "",
-    "quantity": 0,
-    "price": 20.99,
+    "type": "primula",
+    "name": "Primula 'Showstopper Fire Dragon'",
+    "description": "Ignite your spring garden with the spectacular Primula 'Showstopper Fire Dragon'. As its name suggests, this primula features deeply vibrant, double flowers that glow with intense shades of fiery red and deep orange-yellow. The 'Showstopper' series is known for its prolific blooming and excellent garden performance. Forming low mounds of fresh green foliage, the brilliant flowers rise above to create a dazzling, long-lasting display that truly stands out. Ideal for adding a powerful punch of colour to window boxes, patio containers, or the front of shady borders, it thrives in moist, well-drained soil and partial shade.",
+    "quantity": 100,
+    "price": 5.50,
     "isStock": true,
-    "image": ""
+    "image": "primula-fire-dragon.png"
   },
   {
     "id": 26,
     "category": "outdoor-plants",
-    "type": "",
-    "name": "",
-    "description": "",
-    "quantity": 0,
-    "price": 20.99,
+    "type": "grass",
+    "name": "Muhlenbergia capillaris (Pink Muhly Grass)",
+    "description": "Muhlenbergia capillaris, commonly known as Pink Muhly Grass, is a truly spectacular ornamental grass that creates a breathtaking cloud of colour in the autumn garden. From late summer into autumn, delicate, airy plumes emerge above its fine, dark green foliage, transforming into a magnificent pink haze. When backlit by the sun, the effect is absolutely ethereal and truly unforgettable. This drought-tolerant, low-maintenance grass forms attractive clumps, making it perfect for mass plantings, borders, or as an accent plant. Thriving in full sun and well-drained soil, Pink Muhly Grass adds incredible texture, movement, and a stunning burst of late-season beauty to any landscape.",
+    "quantity": 100,
+    "price": 12.99,
     "isStock": true,
-    "image": ""
+    "image": "pink-muhly-grass.png"
+  },
+  {
+    "id": 27,
+    "category": "outdoor-plants",
+    "type": "euonymus",
+    "name": "Euonymus fortunei 'Emerald Gaiety'",
+    "description": "Euonymus fortunei 'Emerald Gaiety' is an exceptionally versatile and reliable evergreen shrub, highly valued for its striking, year-round variegated foliage. Its small, glossy leaves feature a beautiful combination of deep green centers bordered by crisp, creamy white margins. As temperatures drop in winter, these margins often take on an attractive pink or rose blush, adding seasonal interest. This hardy plant can be grown as a dense groundcover, used for low hedging, or trained to climb walls or fences. Tolerant of a wide range of conditions, 'Emerald Gaiety' is an effortless way to introduce bright, consistent colour and texture to challenging areas of the garden, thriving in both sun and partial shade.",
+    "quantity": 100,
+    "price": 15.99,
+    "isStock": true,
+    "image": "euonymus-emerald.png"
+  },
+    {
+    "id": 28,
+    "category": "indoor-plants",
+    "type": "anthurium",
+    "name": "Anthurium 'Royal Red'",
+    "description": "The Anthurium 'Royal Red' is a magnificent indoor plant, celebrated for its long-lasting, deep-red, heart-shaped 'flowers'. What appear to be petals are actually waxy, glossy spathes that emerge above the dark green, leathery foliage. The intense royal red colour of these spathes is truly captivating, creating a sophisticated tropical focal point in any room. Anthuriums are excellent air purifiers and provide nearly continuous blooming throughout the year under ideal conditions. They thrive in bright, indirect light and appreciate warm, humid environments, making them a perfect, low-maintenance choice for adding a bold splash of vibrant, exotic colour to your home or office.",
+    "quantity": 100,
+    "price": 14.99,
+    "isStock": true,
+    "image": "anturium-royal-red.png"
+  },
+     {
+    "id": 29,
+    "category": "indoor-plants",
+    "type": "Saintpaulia",
+    "name": "Saintpaulia 'Top Dark Blue' (African Violet)",
+    "description": "Saintpaulia 'Top Dark Blue' is an exquisite variety of African Violet, cherished for its profusion of stunningly rich, deep blue-purple flowers. These vibrant blooms create a striking contrast against the plant's soft, velvety green leaves, forming a compact and charming display. African Violets are beloved houseplants for their ability to flower almost continuously, bringing a consistent burst of colour to any indoor setting. 'Top Dark Blue' is perfect for windowsills, desks, or as part of a small plant collection, thriving in bright, indirect light and appreciating consistent moisture without overwatering. It's an elegant and relatively easy-to-care-for plant that adds timeless beauty to your home.",
+    "quantity": 100,
+    "price": 15.99,
+    "isStock": true,
+    "image": "saintpaulia-dark-blue.png"
+  },
+     {
+    "id": 30,
+    "category": "indoor-plants",
+    "type": "",
+    "name": "Phalaenopsis 'Mini Mark' (Moth Orchid)",
+    "description": "The Phalaenopsis 'Mini Mark' is a highly sought-after miniature Moth Orchid, celebrated for its unique and exquisite bloom pattern. The creamy-white petals are beautifully speckled with tiny, reddish-purple dots, often centered around a distinctive yellow or orange lip, creating an abstract, artistic 'mark'. This compact orchid is perfect for small spaces, windowsills, or as an elegant desk accent. Like all Moth Orchids, it offers an incredibly long blooming period, often lasting for months. It thrives in bright, indirect light and is a fantastic choice for adding sophisticated, low-maintenance beauty to your indoor environment.",
+    "quantity": 100,
+    "price": 15.99,
+    "isStock": true,
+    "image": "phal-mini-mark.png"
   }
+
 ]

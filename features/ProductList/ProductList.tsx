@@ -5,7 +5,7 @@ import { useAppSelector } from "store/hooks";
 export default function ProductList({ category }: { category: string }) {
   let productData;
 
-  if (category === "gardening") {
+  if (category === "planters") {
     // get the tools slice
   } else {
     //filter plants by category
