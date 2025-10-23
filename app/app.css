@@ -24,16 +24,7 @@ h3 {
   padding: 10px 12px;
 }
 
-a {
-  text-decoration: solid underline transparent;
-}
 
-a:hover,
-a:focus,
-a:focus-visible {
-  text-decoration: solid underline rgb(4, 79, 54);
-  transition: ease 0.3s;
-}
 
 .product-price {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -130,6 +121,16 @@ a.navbar-brand {
 .card-image:focus-visible {
   transform: scale(1.08);
   overflow:auto;
+}
+.name-link {
+  text-decoration: solid underline transparent;
+}
+
+.name-link:hover,
+.name-link:focus,
+.name-link:focus-visible {
+  text-decoration: solid underline rgb(4, 79, 54);
+  transition: ease 0.3s;
 }
 
 .product-card button {

@@ -32,7 +32,7 @@ export default function ProductCard({
             loading="lazy"
           />
         </a>
-        <a href={urlPath}>
+        <a href={urlPath} className="name-link">
           {" "}
           <h3>{name}</h3>
         </a>
