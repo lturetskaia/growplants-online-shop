@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import products from '../../backend/data/products.json';
+import products from '../../backend/data/plantProducts.json';
 
 export interface PlantItem {
   id: number;

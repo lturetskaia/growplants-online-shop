@@ -5,7 +5,7 @@ import { useAppSelector } from "store/hooks";
 export default function ProductList({ category }: { category: string }) {
   let productData;
 
-  if (category === "tools") {
+  if (category === "gardening") {
     // get the tools slice
   } else {
     //filter plants by category
@@ -27,6 +27,7 @@ export default function ProductList({ category }: { category: string }) {
             price={product.price}
             isStock={product.isStock}
             image={product.image}
+            category={product.category}
           />
         ))}
         <li className="product-card empty"></li>

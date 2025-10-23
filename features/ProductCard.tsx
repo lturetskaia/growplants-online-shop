@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 interface ProductItem {
   id: number;
   name: string;
+  category: string;
   price: number;
   isStock: boolean;
   image: string;
@@ -14,8 +15,9 @@ export default function ProductCard({
   price,
   isStock,
   image,
+  category
 }: ProductItem) {
-  const imagePath = `/products/house-plants/${image}`;
+  const imagePath = `/products/${category}/${image}`;
   const altText = `The image of ${name}`;
 
   return (
