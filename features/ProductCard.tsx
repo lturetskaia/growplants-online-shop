@@ -1,4 +1,5 @@
 import { Button } from "react-bootstrap";
+import { Link } from "react-router";
 
 interface ProductItem {
   id: number;
@@ -24,18 +25,18 @@ export default function ProductCard({
   return (
     <li className="product-card">
       <div>
-        <a href={urlPath} className="image-link">
+        <Link to={urlPath} className="image-link">
           <img
             src={imagePath}
             alt={altText}
             className="card-image"
             loading="lazy"
           />
-        </a>
-        <a href={urlPath} className="name-link">
+        </Link>
+        <Link to={urlPath} className="name-link">
           {" "}
           <h3>{name}</h3>
-        </a>
+        </Link>
       </div>
       <div>
         <p className="product-price">{price.toFixed(2)} &pound;</p>

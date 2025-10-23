@@ -5,7 +5,7 @@ import { useAppSelector } from "store/hooks";
 export default function ProductList({ category }: { category: string }) {
   let productData;
 
-  if (category === "planters") {
+  if (category === "pots-and-planters") {
     // get the tools slice
     productData = useAppSelector((state:RootState)=> state.potsPlantersProducts)
   } else {
@@ -37,9 +37,6 @@ export default function ProductList({ category }: { category: string }) {
       </ul>
     );
   }
-
-  console.log(productData);
-  console.log(category);
 
   return <>{content}</>;
 }

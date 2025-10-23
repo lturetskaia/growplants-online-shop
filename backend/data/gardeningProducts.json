@@ -1,7 +1,7 @@
 [
   {
     "id": 100,
-    "category": "planters",
+    "category": "pots-and-planters",
     "type": "pot",
     "name": "Terracotta Pot (with saucer)",
     "description": "Naturally porous and breathable, our classic terracotta pots are perfect for plants that prefer well-drained soil. The warm, earthy tone complements any plant and outdoor décor, while the included saucer catches excess water, protecting your surfaces.",
@@ -12,7 +12,7 @@
   },
   {
     "id": 101,
-    "category": "planters",
+    "category": "pots-and-planters",
     "type": "pot",
     "name": "Ceramic Glazed Pot (with saucer)",
     "description": "Add a pop of vibrant color to your plant collection with our beautiful ceramic glazed pots. The smooth, non-porous surface helps retain moisture, making them ideal for plants that like consistent humidity. Each pot comes with a matching glazed saucer for a complete look.",
@@ -23,7 +23,7 @@
   },
   {
     "id": 102,
-    "category": "planters",
+    "category": "pots-and-planters",
     "type": "pot",
     "name": "Plastic Pot (with saucer)",
     "description": "Lightweight, durable, and affordable, our plastic pots are a practical choice for any gardener. They are perfect for outdoor use as they resist cracking and fading, and the included saucer ensures neat watering. Available in a range of colors to suit your style.",
@@ -34,7 +34,7 @@
   },
   {
     "id": 103,
-    "category": "planters",
+    "category": "pots-and-planters",
     "type": "pot",
     "name": "Concrete Pot (with saucer)",
     "description": "Give your plants a modern, minimalist home with our sturdy concrete pots. Their substantial weight provides stability for larger plants, and the natural gray finish offers a sophisticated aesthetic. Each pot includes a coordinating saucer.",
@@ -45,7 +45,7 @@
   },
   {
     "id": 104,
-    "category": "planters",
+    "category": "pots-and-planters",
     "type": "pot",
     "name": "Self-Watering Pot (with built-in saucer/reservoir)",
     "description": "Keep your plants perfectly hydrated for days with our Self-Watering Pot. The built-in reservoir delivers water directly to the roots, so you can worry less about watering and enjoy healthier plants.",
@@ -56,7 +56,7 @@
   },
   {
     "id": 105,
-    "category": "planters",
+    "category": "pots-and-planters",
     "type": "Cachepot",
     "name": "Classic Ceramic CachePot",
     "description": "Elevate your indoor greenery with our Classic Ceramic Cache Pot. Crafted from high-quality ceramic with a beautiful glazed finish, this pot adds a touch of sophistication to any room. Its sleek, timeless design is perfect for showcasing your favorite houseplants, while keeping them neatly contained without drainage holes to worry about spills. Ideal for plants in nursery pots.",
@@ -67,7 +67,7 @@
   },
   {
     "id": 106,
-    "category": "planters",
+    "category": "pots-and-planters",
     "type": "Cachepot",
     "name": "Textured Terracotta Cachepot",
     "description": "Bring natural warmth and earthy charm to your home with our Textured Terracotta Cache Pot. Its unglazed, porous surface provides a rustic feel, complementing a variety of decor styles from bohemian to minimalist. This decorative pot is perfect for hiding standard nursery containers, offering a stylish solution for your beloved plants without direct planting.",
@@ -78,7 +78,7 @@
   },
   {
     "id": 107,
-    "category": "planters",
+    "category": "pots-and-planters",
     "type": "Cachepot",
     "name": "Modern Metallic Cachepot",
     "description": "Add a touch of contemporary flair with our Modern Metallic Cache Pot. Featuring a sleek, gleaming finish, this pot is designed to make a statement. Its elevated design and reflective surface create a chic home for your houseplants, effortlessly enhancing any modern interior. Ideal for showcasing trailing plants and adding a luxurious accent.",
@@ -89,7 +89,7 @@
   },
   {
     "id": 108,
-    "category": "planters",
+    "category": "pots-and-planters",
     "type": "Cachepot",
     "name": "Woven Basket Cachepot",
     "description": "Infuse your space with cozy, natural textures using our Woven Basket Cache Pot. Handcrafted from durable natural fibers, this charming basket offers a relaxed, bohemian vibe. It's perfect for larger plants, adding warmth and softness to any corner of your home, while discreetly concealing plastic planters for a polished look.",
@@ -100,7 +100,7 @@
   },
   {
     "id": 109,
-    "category": "planters",
+    "category": "pots-and-planters",
     "type": "Cachepot",
     "name": "Minimalist Concrete Cache Pot",
     "description": "Embrace sleek, urban style with our Minimalist Concrete Cache Pot. This pot features a raw, industrial aesthetic with clean lines and a smooth, unadorned finish. Its understated elegance makes it a versatile choice for contemporary interiors, providing a striking contrast to vibrant foliage. Perfect for creating a modern focal point on shelves or desks, designed to house your plants in their original nursery pots.",
@@ -111,7 +111,7 @@
   },
   {
     "id": 110,
-    "category": "planters",
+    "category": "pots-and-planters",
     "type": "window box",
     "name": "Classic Wooden Window Box",
     "description": "Add timeless charm to your home's exterior with our Classic Wooden Window Box. Crafted from durable, weather-resistant cedar, this box features traditional slatted detailing and a rich, natural finish that beautifully complements any architectural style. Perfect for bursting with vibrant annuals or lush greenery, it instantly enhances curb appeal and brings a welcoming touch to your windows.",
@@ -122,7 +122,7 @@
   },
    {
     "id": 111,
-    "category": "planters",
+    "category": "pots-and-planters",
     "type": "planter box",
     "name": "Galvanized Metal Planter Box",
     "description": "Introduce industrial chic to your patio or deck with our Modern Galvanized Metal Planter Box. Its sleek, minimalist design and robust galvanized steel construction offer exceptional durability and weather resistance. This contemporary box is ideal for creating striking plant arrangements, from architectural grasses to colorful succulents, bringing a sophisticated, urban edge to your outdoor living space.",
@@ -133,7 +133,7 @@
   }, 
    {
     "id": 112,
-    "category": "planters",
+    "category": "pots-and-planters",
     "type": "planter pot",
     "name": "Tapered Tall Planter",
     "description": "Featuring a sleek, narrow base that widens to a spacious planting area, this design adds vertical interest and sophistication to any space. Constructed from lightweight yet durable, weather-resistant material (like composite or resin), it's built to withstand the elements while providing a stylish pedestal for small trees, cascading flowers, or structural shrubs. The elevation also makes planting and maintenance easier!",
@@ -144,7 +144,7 @@
   },
   {
     "id": 113,
-    "category": "planters",
+    "category": "pots-and-planters",
     "type": "plant stand",
     "name": "Minimalist Metal Plant Stand",
     "description": "Elevate your greenery with our Modern Minimalist Metal Plant Stand. Crafted with sleek black metal legs in a clean, geometric design and topped with a natural wooden surface, this stand offers a contemporary touch to any room. Its elevated height is perfect for showcasing your favorite houseplants, allowing trailing vines to cascade beautifully or bringing smaller potted plants into better view. A stylish solution for adding vertical interest to your decor without overcrowding.",
@@ -155,7 +155,7 @@
   },
   {
     "id": 114,
-    "category": "planters",
+    "category": "pots-and-planters",
     "type": "plant stand",
     "name": "The Multi-Tiered Wooden Corner Plant Stand",
     "description": "Maximize your plant display and corner space with our Multi-Tiered Wooden Corner Plant Stand. Crafted from beautiful, natural wood, this stand features multiple staggered shelves, creating an attractive tiered display for a variety of potted plants. Its clever corner design fits snugly into any unused space, turning a simple corner into a lush, green focal point. Perfect for organizing your plant collection and adding warmth and organic style to your home.",
