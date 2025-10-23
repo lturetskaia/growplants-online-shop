@@ -1,5 +1,5 @@
 import type { Route } from "../+types/root";
-import Products from "~/components/products";
+import ProductList from "../../features/productList/ProductList";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -13,5 +13,6 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function HousePlants() {
-  return <Products/>;
+
+  return <ProductList category = "indoor-plants"/>;
 }
