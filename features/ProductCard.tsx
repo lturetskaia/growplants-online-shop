@@ -15,16 +15,27 @@ export default function ProductCard({
   price,
   isStock,
   image,
-  category
+  category,
 }: ProductItem) {
   const imagePath = `/products/${category}/${image}`;
   const altText = `The image of ${name}`;
+  const urlPath = `/products/${id}`
 
   return (
     <li className="product-card">
       <div>
-        <img src={imagePath} alt={altText} className="product-image" loading="lazy"/>
-        <h3>{name}</h3>
+        <a href={urlPath} className="image-link">
+          <img
+            src={imagePath}
+            alt={altText}
+            className="card-image"
+            loading="lazy"
+          />
+        </a>
+        <a href={urlPath}>
+          {" "}
+          <h3>{name}</h3>
+        </a>
       </div>
       <div>
         <p className="product-price">{price.toFixed(2)} &pound;</p>
