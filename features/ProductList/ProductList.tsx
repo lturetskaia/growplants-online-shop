@@ -7,6 +7,7 @@ export default function ProductList({ category }: { category: string }) {
 
   if (category === "planters") {
     // get the tools slice
+    productData = useAppSelector((state:RootState)=> state.potsPlantersProducts)
   } else {
     //filter plants by category
     productData = useAppSelector(

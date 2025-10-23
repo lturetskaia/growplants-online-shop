@@ -1,19 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 import products from '../../backend/data/plantProducts.json';
+import type { ProductItem } from "common/types";
 
-export interface PlantItem {
-  id: number;
-  name: string;
-  category: string;
-  type: string;
-  quantity: number;
-  price: number;
-  description: string;
-  isStock: boolean;
-  image: string;
-}
-
-const initialState: Array <PlantItem> = products;
+const initialState: ProductItem[] = products;
 
 export const plantsSlice = createSlice({
     name: 'plantProducts',
