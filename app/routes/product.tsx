@@ -58,11 +58,16 @@ export default function Product({ params }: Route.ComponentProps) {
         <div className="product-info">
           <h2>{product.name}</h2>
           <div className="product-controls">
-
             <div className="add-to-cart-btngroup">
               <div className="quantity-input">
                 <button> &ndash;</button>
-                <input type="number" min='0' max='product.quanityt' step="1" />
+                <input
+                  type="number"
+                  min="1"
+                  max="product.quanity"
+                  defaultValue="1"
+                  step="1"
+                />
                 <button>+</button>
               </div>
               <Button
@@ -72,8 +77,11 @@ export default function Product({ params }: Route.ComponentProps) {
                 {product.quantity > 0 ? "Add to cart" : "Out of stock"}
               </Button>
             </div>
-            <img className='like-btn' src="/heart-like-icon.svg" alt="Save button" />
-
+            <img
+              className="like-btn"
+              src="/heart-like-icon.svg"
+              alt="Save button"
+            />
           </div>
         </div>
       </section>
