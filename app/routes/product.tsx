@@ -3,6 +3,7 @@ import { useAppSelector } from "store/hooks";
 import type { RootState } from "store/reduxStore";
 import ProductRating from "features/ProductRating";
 import { Carousel, Button, Accordion } from "react-bootstrap";
+import { useRef, useState } from "react";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -15,6 +16,8 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Product({ params }: Route.ComponentProps) {
+  const [userQuantity, setUserQuantity] = useState(1);
+  const inputRef = useRef<HTMLInputElement>(null);
   const productCategory = params.productCategory;
   const productId = Number(params.productId);
   const reviews = null;
@@ -40,11 +43,19 @@ export default function Product({ params }: Route.ComponentProps) {
   const imagePath = `/products/${productCategory}/${product.image}`;
   const altText = `The image of ${product.name}`;
 
+  function handleChangeQuantity(option: string) {
+    if (option === "increment" && userQuantity < product!.quantity) {
+      setUserQuantity(+inputRef.current!.value + 1);
+    } else if (option === "decrement" && userQuantity > 0) {
+      setUserQuantity(+inputRef.current!.value - 1);
+    }
+  }
+
   return (
     <>
       <section className="product-main">
         <div className="product-gallery">
-          <Carousel >
+          <Carousel>
             <Carousel.Item>
               <img src={imagePath} alt={altText} />
             </Carousel.Item>
@@ -68,15 +79,22 @@ export default function Product({ params }: Route.ComponentProps) {
             <div className="product-controls">
               <div className="add-to-cart-btngroup">
                 <div className="quantity-input">
-                  <button> &ndash;</button>
+                  <button onClick={() => handleChangeQuantity("decrement")}>
+                    {" "}
+                    &ndash;
+                  </button>
                   <input
                     type="number"
                     min="1"
-                    max="product.quanity"
-                    defaultValue="1"
+                    max={product.quantity}
                     step="1"
+                    value={userQuantity}
+                    ref={inputRef}
+                    readOnly
                   />
-                  <button>+</button>
+                  <button onClick={() => handleChangeQuantity("increment")}>
+                    +
+                  </button>
                 </div>
                 <Button
                   variant="outline-success"
@@ -98,7 +116,7 @@ export default function Product({ params }: Route.ComponentProps) {
       <section className="product-details">
         <Accordion defaultActiveKey="0" alwaysOpen>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>About the plant</Accordion.Header>
+            <Accordion.Header>About</Accordion.Header>
             <Accordion.Body>
               {" "}
               <p>{product.description} </p>
@@ -109,15 +127,9 @@ export default function Product({ params }: Route.ComponentProps) {
             <Accordion.Body>
               {" "}
               <p>
-                <span>Our Plant Nursery</span>: Our plants are nurtured and
-                prepared for dispatch in our tropical glasshouse nursery, where
-                we maintain an average temperature of 19°C. This ensures optimal
-                conditions for plant health.
-              </p>
-              <p>
-                <span>Packaging:</span> We pack the plants using custom-designed
+                <span>Packaging:</span> We pack all items using custom-designed
                 boxes with special compartments and supports to prevent movement
-                and damage, so your plants arrive in perfect condition. Our
+                and damage, so your products arrive in perfect condition. Our
                 plant boxes are 100% recyclable, so they can be responsibly
                 disposed of without harming the planet.
               </p>
