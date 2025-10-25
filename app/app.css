@@ -5,7 +5,7 @@ body {
 
 main {
   padding: 3rem 0;
-  width: 80%;
+  width: 90%;
   max-width: 1300px;
   margin: auto;
 }
@@ -16,12 +16,20 @@ main img {
   margin: auto;
 }
 
+h2 {
+  color: rgb(4, 79, 54);
+}
+
 h3 {
   font-size: 1.2rem;
   margin: 10px 0;
   color: rgb(4, 79, 54);
   text-align: center;
   padding: 10px 12px;
+}
+
+p {
+  text-align: justify;
 }
 
 .product-price {
@@ -32,7 +40,7 @@ h3 {
 }
 
 .btn {
-  background-color: #caeedc;
+  background-color: rgba(202, 238, 220, 0.5);
   color: #04341e;
 }
 
@@ -77,7 +85,6 @@ a.navbar-brand {
 .products {
   display: flex;
   width: auto;
-  /* width: 100%; */
   justify-content: space-between;
   align-items: normal;
   list-style: none;
@@ -145,6 +152,7 @@ a.navbar-brand {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 3rem;
 }
 
 .product-gallery,
@@ -160,7 +168,17 @@ a.navbar-brand {
 .product-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 4rem;
+}
+
+.product-info p {
+  text-align: justify;
+}
+
+.product-price.left {
+  padding-left: 30px;
+  font-size: 1.3rem;
 }
 
 .product-controls {
@@ -176,7 +194,7 @@ a.navbar-brand {
 }
 .product-controls img:hover,
 .product-controls img:focus {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .add-to-cart-btngroup {
@@ -222,4 +240,31 @@ a.navbar-brand {
 /* Firefox */
 .quantity-input input[type="number"] {
   -moz-appearance: textfield;
+}
+
+.accordion-item {
+  font-size: 1rem;
+}
+
+.accordion-button {
+  background-color: rgba(231, 231, 231, 0.5);
+  /* --bs-accordion-active-bg: rgb(202, 238, 220); */
+  --bs-border-color: rgb(64, 64, 64);
+  --bs-accordion-active-bg: rgba(250, 222, 200, 0.8);
+  --bs-accordion-btn-focus-box-shadow: transparent;
+  --bs-accordion-active-color: black;
+}
+
+.product-details span {
+  font-weight: bold;
+}
+
+.rating-info {
+  display: flex;
+  align-items: center;
+}
+
+.rating-img {
+  height: 1.5rem;
+  margin: 1rem 0.8rem 1rem 0;
 }
