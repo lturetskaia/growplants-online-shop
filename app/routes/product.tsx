@@ -1,6 +1,7 @@
 import type { Route } from "../+types/root";
 import { useAppSelector } from "store/hooks";
 import type { RootState } from "store/reduxStore";
+import ProductRating from "features/ProductRating";
 import { Carousel, Button, Accordion } from "react-bootstrap";
 
 export function meta({}: Route.MetaArgs) {
@@ -16,7 +17,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Product({ params }: Route.ComponentProps) {
   const productCategory = params.productCategory;
   const productId = Number(params.productId);
-
+  const reviews = null;
   let product;
 
   if (
@@ -58,14 +59,7 @@ export default function Product({ params }: Route.ComponentProps) {
         <div className="product-info">
           <div>
             <h2>{product.name}</h2>
-            <div className="rating-info">
-              <img
-                className="rating-img"
-                src="/stars.png"
-                alt="Five star rating"
-              />
-              <span>0 reviews</span>
-            </div>
+            <ProductRating reviews={reviews}></ProductRating>
           </div>
           <div>
             <p className="product-price left">
@@ -93,8 +87,8 @@ export default function Product({ params }: Route.ComponentProps) {
               </div>
               <img
                 className="like-btn"
-                src="/heart-like-icon.svg"
-                alt="Save button"
+                src="/icons/heart-like-icon.svg"
+                alt="Add to wish list icon"
               />
             </div>
           </div>

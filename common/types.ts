@@ -9,3 +9,12 @@ export interface ProductItem {
   isStock: boolean;
   image: string;
 }
+
+export interface ProductReview {
+  rating: number;
+  title: string|null;
+  author: string;
+  text: string;
+}
+
+export type ProductReviews = ProductReview[]|null;

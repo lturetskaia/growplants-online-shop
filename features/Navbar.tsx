@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import NavB from "react-bootstrap/Navbar";
-import { NavLink, Link } from "react-router";
+import { NavLink} from "react-router";
 
 export default function Navbar() {
   return (
@@ -9,7 +9,7 @@ export default function Navbar() {
       <Container>
         <NavB.Toggle aria-controls="basic-NavB-nav" />
         <NavB.Brand href="/">
-          <img src="/icon.png" className="nav-icon"/>
+          <img src="/icons/growplants-icon.png" className="nav-icon"/>
           <span>GrowPlants</span>
         </NavB.Brand>
         <NavB.Collapse id="basic-NavB-nav">
@@ -30,7 +30,7 @@ export default function Navbar() {
         </NavB.Collapse>
         <div>
           <NavB.Brand href="/cart">
-            <img className="nav-icon" src="/shopping-cart-icon.svg" />
+            <img className="nav-icon" src="/icons/shopping-cart-icon.svg" />
           </NavB.Brand>
         </div>
       </Container>
