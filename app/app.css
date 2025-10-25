@@ -248,9 +248,9 @@ a.navbar-brand {
 
 .accordion-button {
   background-color: rgba(231, 231, 231, 0.5);
-  /* --bs-accordion-active-bg: rgb(202, 238, 220); */
+  --bs-accordion-active-bg: rgb(202, 238, 220);
   --bs-border-color: rgb(64, 64, 64);
-  --bs-accordion-active-bg: rgba(250, 222, 200, 0.8);
+  /* --bs-accordion-active-bg: rgba(250, 222, 200, 0.8); */
   --bs-accordion-btn-focus-box-shadow: transparent;
   --bs-accordion-active-color: black;
 }
