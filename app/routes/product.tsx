@@ -43,7 +43,7 @@ export default function Product({ params }: Route.ComponentProps) {
     <>
       <section className="product-main">
         <div className="product-gallery">
-          <Carousel data-bs-theme="dark">
+          <Carousel >
             <Carousel.Item>
               <img src={imagePath} alt={altText} />
             </Carousel.Item>
