@@ -1,11 +1,24 @@
+export interface ProductOption {
+  option: string;
+  price: number;
+  quantity: number;
+}
+
 export interface ProductItem {
-  id: number,
+  id: number;
   name: string;
+  description: string;
   category: string;
   type: string;
-  quantity: number;
-  price: number;
-  description: string;
-  isStock: boolean;
+  options: ProductOption[];
   image: string;
 }
+
+export interface ProductReview {
+  rating: number;
+  title: string | null;
+  author: string;
+  text: string;
+}
+
+export type ProductReviews = ProductReview[] | null;

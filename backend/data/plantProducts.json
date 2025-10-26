@@ -1,333 +1,674 @@
 [
   {
     "id": 1,
-    "category": "indoor-plants",
+    "category": "house-plants",
     "type": "monstera",
     "name": "Monstera Albo",
     "description": "The Monstera Albo is a highly coveted and stunning plant, celebrated for its unique variegated foliage. Each glossy, heart-shaped leaf is a work of art, featuring striking patterns of deep green and pure white, ensuring no two leaves are exactly alike. This rare beauty adds a touch of sophisticated elegance and a tropical vibe to any indoor space. As it matures, the leaves develop the iconic 'fenestrations' or natural splits, adding to its dramatic appeal. Perfect for experienced plant enthusiasts looking for a show-stopping statement piece, the Monstera Albo thrives in bright, indirect light and appreciates consistent humidity. Elevate your plant collection with this exquisite and eye-catching specimen.",
-    "quantity": 100,
-    "price": 15.5,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "6cm",
+        "quantity": 100,
+        "price": 10.99
+      },
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 15.99
+      },
+      {
+        "option":  "14cm",
+        "quantity": 100,
+        "price": 20.99
+      }
+    ],
     "image": "monstera-albo.jpg"
   },
   {
     "id": 2,
-    "category": "indoor-plants",
+    "category": "house-plants",
     "type": "epiprenum",
     "name": "Epipremnum Aureum (Pothos)",
     "description": "Often referred to as the 'Devil's Ivy', the Epipremnum Aureum is a remarkably versatile and easy-to-care-for plant, making it an excellent choice for both beginners and seasoned plant parents. Its vibrant, heart-shaped leaves, often splashed with shades of green and yellow, cascade beautifully, making it ideal for hanging baskets, shelves, or trained to climb. This resilient plant is known for its ability to tolerate a wide range of light conditions, from low to bright indirect light, and is forgiving of occasional neglect. Beyond its aesthetic appeal, the Pothos is also recognized for its air-purpurifying qualities, helping to create a healthier indoor environment. Bring a touch of lush greenery and effortless charm into your home with this popular and adaptable plant.",
-    "quantity": 200,
-    "price": 8.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "6cm",
+        "quantity": 100,
+        "price": 5.99
+      },
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 8.99
+      },
+      {
+        "option":  "14cm",
+        "quantity": 100,
+        "price": 15.99
+      }
+    ],
     "image": "epiprenum-aureum.jpg"
   },
   {
     "id": 3,
-    "category": "indoor-plants",
+    "category": "house-plants",
     "type": "calathea",
     "name": "Calathea Makoyana",
     "description": "Step into a world of botanical artistry with the Calathea Makoyana, a true masterpiece of nature. This exquisite plant boasts large, rounded leaves adorned with captivating, intricate patterns of light and dark green stripes, giving it a luxurious and sophisticated appearance. Each leaf is a testament to natural design, making it a focal point in any room. Like other Calatheas, the Makoyana exhibits 'nyctinasty' where its leaves fold upwards at night and unfurl during the day, a fascinating behavior to observe. Ideal for those who appreciate unique foliage and are ready to provide consistent humidity and bright, indirect light. The Calathea Makoyana is more than just a plant; it's a living piece of art that brings elegance and a tranquil ambiance to your home.",
-    "quantity": 100,
-    "price": 10.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "6cm",
+        "quantity": 100,
+        "price": 6.99
+      },
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 10.99
+      },
+      {
+        "option":  "14cm",
+        "quantity": 100,
+        "price": 16.99
+      }
+    ],
     "image": "calathea-makoyana.jpg"
   },
   {
     "id": 4,
-    "category": "indoor-plants",
+    "category": "house-plants",
     "type": "ficus",
     "name": "Ficus Lyrata (Fiddle Leaf Fig)",
     "description": "The Ficus Lyrata, commonly known as the Fiddle Leaf Fig, is an iconic and highly sought-after houseplant renowned for its large, violin-shaped leaves. These glossy, dark green leaves with prominent veins make a bold architectural statement, instantly elevating the style of any interior space. Originating from the tropical rainforests of West Africa, this majestic plant thrives in bright, indirect light and adds a touch of lush, exotic grandeur to modern and traditional décor alike. While it requires consistent care and a stable environment to flourish, the stunning visual impact of a healthy Fiddle Leaf Fig makes it a rewarding centerpiece for plant enthusiasts looking to create a dramatic green focal point in their home or office.",
-    "quantity": 100,
-    "price": 25.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "6cm",
+        "quantity": 100,
+        "price": 4.99
+      },
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 9.99
+      },
+      {
+        "option":  "14cm",
+        "quantity": 100,
+        "price": 17.99
+      }
+    ],
     "image": "ficus-lyrata.png"
   },
   {
     "id": 5,
-    "category": "indoor-plants",
+    "category": "house-plants",
     "type": "ficus",
     "name": "Ficus Tineke (Variegated Rubber Plant)",
     "description": "The Ficus Tineke, a vibrant variety of the Rubber Plant, is admired for its strikingly variegated foliage. Its thick, leathery leaves display a beautiful mosaic of creamy white, soft green, and dusty rose hues, with new leaves often emerging with a pronounced pink blush. This attractive variegation adds a unique visual interest and a sophisticated splash of color to any room. Easy to care for and relatively hardy, the Ficus Tineke is an excellent choice for those seeking a stylish plant that can adapt to various indoor conditions, preferring bright, indirect light to maintain its vivid coloration. Its upright growth habit makes it perfect as a floor plant or a substantial tabletop accent.",
-    "quantity": 100,
-    "price": 17.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "6cm",
+        "quantity": 100,
+        "price": 8.99
+      },
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 12.99
+      },
+      {
+        "option":  "14cm",
+        "quantity": 100,
+        "price": 20.99
+      }
+    ],
     "image": "ficus-tineke.png"
   },
   {
     "id": 6,
-    "category": "indoor-plants",
+    "category": "house-plants",
     "type": "fittonia",
     "name": "Fittonia Red Tiger (Nerve Plant)",
     "description": "The Fittonia 'Red Tiger', commonly known as the Nerve Plant, is a vibrant and compact gem that instantly adds a burst of color to any collection. Its small, intricately veined leaves feature a stunning network of bright red or deep pink lines against a rich green background, creating a mesmerizing pattern reminiscent of a delicate stained-glass window. This eye-catching plant is perfect for terrariums, small pots, or as a colorful accent on a desk or shelf. Fittonias are known for being a bit dramatic, famously 'fainting' when thirsty, only to perk right back up after a good drink, making them quite responsive to their care. They thrive in high humidity and bright, indirect light, bringing a lively, jewel-toned elegance to humid environments like bathrooms or kitchens.",
-    "quantity": 100,
-    "price": 10.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "6cm",
+        "quantity": 100,
+        "price": 5.99
+      },
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 9.99
+      },
+      {
+        "option":  "14cm",
+        "quantity": 100,
+        "price": 14.99
+      }
+    ],
     "image": "fittonia-red-tiger.png"
   },
   {
     "id": 7,
-    "category": "indoor-plants",
+    "category": "house-plants",
     "type": "alocasia",
     "name": "Alocasia Dragon Scale(Silver)",
     "description": "The Alocasia Dragon Scale is a captivating and highly sought-after plant for its incredibly textured and uniquely patterned leaves. True to its name, the foliage resembles the scales of a mythical dragon, with deep emerald-green veins etched into a lighter, almost silvery-green background, creating a three-dimensional, ridged surface. The undersides of the leaves often showcase a reddish hue, adding to its allure. This exotic Alocasia brings a touch of the extraordinary to any plant collection, thriving in warm, humid conditions with bright, indirect light. It's a fantastic choice for collectors and those who appreciate plants with unusual and striking architectural form, guaranteed to be a conversation starter.",
-    "quantity": 100,
-    "price": 15.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "6cm",
+        "quantity": 100,
+        "price": 10.99
+      },
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 15.99
+      },
+      {
+        "option":  "14cm",
+        "quantity": 100,
+        "price": 20.99
+      }
+    ],
     "image": "alocasia-dragon-silver.png"
   },
   {
     "id": 8,
-    "category": "indoor-plants",
+    "category": "house-plants",
     "type": "cactus",
     "name": "Opuntia Microdasys (Bunny Ear Cactus)",
     "description": "The Opuntia Microdasys, affectionately known as the Bunny Ear Cactus, is a charming and distinctive plant that brings a playful desert vibe to any home. Its flattened, oval pads grow in pairs, resembling a rabbit's ears, and are covered in tiny, harmless-looking glochids (prickly hairs) that give it a soft, fuzzy appearance. This unique cactus is ideal for bright, sunny spots, preferring a south-facing window where it can soak up plenty of light. It's incredibly low-maintenance, requiring infrequent watering and well-draining soil, making it perfect for busy individuals or those new to plant care. The Bunny Ear Cactus adds a touch of whimsical greenery and architectural interest to modern, bohemian, or minimalist interiors.",
-    "quantity": 100,
-    "price": 7.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "6cm",
+        "quantity": 100,
+        "price": 4.99
+      },
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 9.99
+      },
+      {
+        "option":  "14cm",
+        "quantity": 100,
+        "price": 15.99
+      }
+    ],
     "image": "opuntia-microdasys.png"
   },
   {
     "id": 9,
-    "category": "indoor-plants",
+    "category": "house-plants",
     "type": "cactus",
     "name": "Mammillaria Hahniana (Old Lady Cactus)",
     "description": "The Mammillaria Hahniana, or Old Lady Cactus, is a delightful and strikingly beautiful succulent that commands attention with its dense covering of soft, white, hair-like spines. These fluffy white 'hairs' protect the plant and give it a charming, almost fuzzy appearance, contrasting beautifully with its vibrant pink or purplish-red flowers that often form a crown around its top in spring. This globular cactus is relatively small and slow-growing, making it perfect for windowsills, office desks, or as part of a succulent arrangement. It thrives on bright light and minimal watering, embodying resilience and understated elegance. The Old Lady Cactus adds a touch of unique texture and a pop of color to any well-lit space.",
-    "quantity": 100,
-    "price": 8.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "6cm",
+        "quantity": 100,
+        "price": 6.99
+      },
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 13.99
+      },
+      {
+        "option":  "14cm",
+        "quantity": 100,
+        "price": 20.99
+      }
+    ],
     "image": "mammillaria-hahniana.png"
   },
   {
     "id": 10,
-    "category": "indoor-plants",
+    "category": "house-plants",
     "type": "cactus",
     "name": "Cereus Peruvianus (Peruvian Apple Cactus)",
     "description": "The Cereus Peruvianus, also known as the Peruvian Apple Cactus, is a magnificent and statuesque plant that brings a strong architectural presence to any large indoor space. With its tall, columnar, and often branching stems, this cactus creates a dramatic focal point, mimicking the grandeur of desert landscapes. Its blue-green stems are ribbed and typically have short spines, giving it a majestic yet minimalist appeal. This fast-growing cactus can eventually produce edible, red-skinned fruit indoors given optimal conditions. Thriving in abundant direct sunlight and requiring very little water, the Peruvian Apple Cactus is perfect for contemporary, minimalist, or industrial interiors seeking a striking, low-maintenance statement piece that exudes sophisticated desert charm.",
-    "quantity": 100,
-    "price": 55.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "6cm",
+        "quantity": 100,
+        "price": 8.99
+      },
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 15.99
+      },
+      {
+        "option":  "14cm",
+        "quantity": 100,
+        "price": 21.99
+      }
+    ],
     "image": "cereus-repuvianus.png"
   },
   {
     "id": 11,
-    "category": "indoor-plants",
+    "category": "house-plants",
     "type": "croton",
     "name": "Codiaeum Variegatum (Croton Plant)",
     "description": "The Codiaeum Variegatum, commonly known as the Croton Plant, is a breathtaking explosion of color that instantly injects tropical vibrancy into any room. Famous for its incredibly diverse and vividly patterned foliage, Crotons display a brilliant spectrum of red, orange, yellow, green, and even purple hues, often splashed and marbled across each leaf. The intensity of its colors deepens with ample bright, direct sunlight, making it a spectacular living art piece. With various leaf shapes, from broad and oval to long and narrow, each Croton is a unique spectacle. While it appreciates consistent humidity and warmth, the Croton is a rewarding plant for those seeking a bold, colorful statement that brings an unmistakable exotic flair to their interior decor",
     "quantity": 100,
-    "price": 20.99,
+    "options": [
+      {
+        "option":  "6cm",
+        "quantity": 100,
+        "price": 9.99
+      },
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 16.99
+      },
+      {
+        "option":  "14cm",
+        "quantity": 100,
+        "price": 25.99
+      }
+    ],
     "isStock": false,
     "image": "croton-variegated.png"
   },
   {
     "id": 12,
-    "category": "outdoor-plants",
+    "category": "garden-plants",
     "type": "Hydrangea",
     "name": "Hydrangea macrophylla (Mophead Hydrangea)",
     "description": "The magnificent Mophead Hydrangea is a summer spectacle, offering huge, rounded flowerheads in shades of pink, blue, white, or purple. The flower colour often depends on the soil's pH – acid soil produces blue blooms, while alkaline soil yields pink. These deciduous shrubs thrive in partial shade and moist, well-drained soil, making them perfect for woodland gardens, borders, or large containers. Providing weeks of vibrant colour from mid-summer into autumn, Hydrangeas are easy to grow and add a lush, romantic feel to any garden.",
-    "quantity": 100,
-    "price": 15.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 17.99
+      },
+      {
+        "option":  "16cm",
+        "quantity": 100,
+        "price": 25.99
+      }
+    ],
     "image": "hydrangea-macrophylla.png"
   },
   {
     "id": 13,
-    "category": "outdoor-plants",
+    "category": "garden-plants",
     "type": "rose",
     "name": "Scented Floribunda Rose -'Rock and Roll'",
     "description": "Dare to be different with Rose 'Rock and Roll', a truly spectacular Scented Floribunda Rose that brings unparalleled drama to the garden. Its vibrant blooms feature an incredible striped pattern of deep crimson-red and pure white, ensuring no two flowers are exactly alike. Beyond its show-stopping appearance, 'Rock and Roll' boasts a delightful fragrance, adding another layer of sensory pleasure. This vigorous rose flowers repeatedly throughout the summer, creating a continuous display of unique beauty. Perfect for borders, containers, or as a striking focal point, it thrives in full sun with fertile, well-drained soil.",
-    "quantity": 100,
-    "price": 20.55,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 15.99
+      },
+      {
+        "option":  "16cm",
+        "quantity": 100,
+        "price": 25.99
+      }
+    ],
     "image": "rose-rock-and-roll.png"
   },
   {
     "id": 14,
-    "category": "outdoor-plants",
+    "category": "garden-plants",
     "type": "rose",
-    "name": "Floribunda Rose -'Iceberg'",
+    "name": "Floribunda Rose 'Iceberg'",
     "description": "",
-    "quantity": 100,
-    "price": 20.55,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 17.99
+      },
+      {
+        "option":  "16cm",
+        "quantity": 100,
+        "price": 25.99
+      }
+    ],
     "image": "rose-iceberg.png"
   },
   {
     "id": 15,
-    "category": "outdoor-plants",
+    "category": "garden-plants",
     "type": "lavandula",
     "name": "Lavandula angustifolia (English Lavender)",
     "description": "The quintessential scent of summer, English Lavender is a beloved classic in UK gardens. Its fragrant purple-blue flower spikes bloom profusely from early summer, attracting bees and butterflies. This hardy shrub thrives in full sun and well-drained soil, making it perfect for borders, rockeries, or containers. Easy to care for and drought-tolerant once established, Lavender offers beautiful colour, an intoxicating aroma, and a taste of the Mediterranean in your own outdoor space. Ideal for creating scented pathways or calming sensory gardens.",
-    "quantity": 100,
-    "price": 15.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 12.99
+      },
+      {
+        "option":  "16cm",
+        "quantity": 100,
+        "price": 20.99
+      }
+    ],
     "image": "lavandula.png"
   },
   {
     "id": 16,
-    "category": "outdoor-plants",
+    "category": "garden-plants",
     "type": "cyclamen",
     "name": "Cyclamen persicum (Florist's Cyclamen)",
     "description": "A winter flowering gem, the Cyclamen offers a dazzling display when other plants fade. Known for its delicate, upswept flowers in shades of pink, red, white, or purple, and heart-shaped, silvery-marbled foliage. Perfect for adding vibrant colour to cool porches, windowsills, or sheltered outdoor spots during the cooler months. Requires well-drained soil and cool temperatures to thrive.",
-    "quantity": 100,
-    "price": 10.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 9.99
+      },
+      {
+        "option":  "16cm",
+        "quantity": 100,
+        "price": 15.99
+      }
+    ],
     "image": "cyclamen.png"
   },
   {
     "id": 17,
-    "category": "outdoor-plants",
+    "category": "garden-plants",
     "type": "heather",
     "name": "Calluna vulgaris 'Disco Queen' (Heather Plant)",
     "description": "The Calluna vulgaris 'Disco Queen' is a vibrant heather cultivar that lights up the late summer and autumn garden with its brilliant magenta-pink flower spikes. This evergreen shrub forms a dense mat of finely textured foliage, providing year-round interest. Perfect for rockeries, borders, or containers, 'Disco Queen' thrives in full sun and acidic, well-drained soil. It's a magnet for pollinators and brings a cheerful, long-lasting burst of colour, ideal for creating ground cover or adding structure to seasonal displays.",
-    "quantity": 100,
-    "price": 7.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 7.99
+      },
+      {
+        "option":  "16cm",
+        "quantity": 100,
+        "price": 14.99
+      }
+    ],
     "image": "calluna-disco-queen.png"
   },
   {
     "id": 18,
-    "category": "outdoor-plants",
+    "category": "garden-plants",
     "type": "Chrysanthemum",
     "name": "Yellow Chrysanthemum",
     "description": "The Yellow Chrysanthemum is a classic autumn favourite, brightening up gardens and homes with its cheerful, sun-kissed blooms. These vibrant flowers, with their densely packed petals, create a full, opulent display that lasts for weeks. Available in various forms from elegant single blooms to large, showy pompons, yellow chrysanthemums symbolise joy and optimism. They are perfect for adding a burst of late-season colour to borders, patio pots, or as stunning cut flowers to illuminate indoor spaces. Easy to grow in full sun and well-drained soil, they are a dependable choice for extending your garden's beauty into the cooler months.",
-    "quantity": 100,
-    "price": 17.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 14.99
+      },
+      {
+        "option":  "16cm",
+        "quantity": 100,
+        "price": 23.99
+      }
+    ],
     "image": "chrysanthemums-yellow.jpg"
   },
   {
     "id": 19,
-    "category": "outdoor-plants",
+    "category": "garden-plants",
     "type": "petunia",
     "name": "Petunia 'Indigo Vein'",
     "description": "Petunia 'Indigo Vein' is a truly captivating annual, renowned for its exquisite and intricate flower pattern. Each pristine white or creamy bloom is adorned with a delicate network of deep indigo-purple veins radiating from a dark throat, creating a mesmerizing visual effect. This stunning petunia forms a profusion of medium-sized flowers that cascade beautifully, making it an ideal choice for hanging baskets, patio containers, or spilling over the edges of garden beds. 'Indigo Vein' offers continuous blooms from late spring through to the first frosts, thriving in full sun with regular feeding and watering. It's a fantastic choice for adding sophisticated charm and continuous colour to any outdoor space.",
-    "quantity": 100,
-    "price": 5.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 10.99
+      },
+      {
+        "option":  "16cm",
+        "quantity": 100,
+        "price": 15.99
+      }
+    ],
     "image": "petunia-indigo-vein.png"
   },
   {
     "id": 20,
-    "category": "outdoor-plants",
+    "category": "garden-plants",
     "type": "water lily",
     "name": "Pink Water Lily - Nymphaea",
     "description": "Transform your pond or water feature into an oasis of calm with the exquisite Pink Water Lily (Nymphaea). This stunning aquatic plant is a summer classic, featuring lush, round, deep green lily pads that float gracefully on the water's surface, providing shade and shelter for aquatic life. From early summer, it produces magnificent, multi-layered flowers in shades of soft to vibrant pink. The blooms majestically open during the day and close at night, offering a continuous display of breathtaking beauty. Perfect for still or slow-moving water, this hardy perennial brings unparalleled elegance and a tranquil, tropical feel to any garden pond.",
-    "quantity": 100,
-    "price": 20.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 17.99
+      },
+      {
+        "option":  "16cm",
+        "quantity": 100,
+        "price": 25.99
+      }
+    ],
     "image": "water-lily-pink.png"
   },
   {
     "id": 21,
-    "category": "outdoor-plants",
+    "category": "garden-plants",
     "type": "cypress",
     "name": "Lemon Scented Monterey Cypress 'Goldcrest'",
     "description": "The Lemon Scented Monterey Cypress 'Goldcrest' is a cheerful evergreen conifer prized for its bright, year-round colour and invigorating fragrance. Its soft, feathery foliage is a brilliant lime green to golden yellow, forming a naturally slender, columnar shape that makes it perfect for containers, patios, or tight garden spaces. Best of all, a gentle brush against the needles releases a strong, crisp lemon scent. This low-maintenance cypress thrives in full sun and well-drained soil, making it an excellent choice for adding vertical interest, a splash of golden colour, and a wonderful scent to your outdoor area. It is also popularly used indoors as a miniature Christmas tree.",
-    "quantity": 100,
-    "price": 20.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 14.99
+      },
+      {
+        "option":  "16cm",
+        "quantity": 100,
+        "price": 21.99
+      }
+    ],
     "image": "cypress-goldcrest.png"
   },
   {
     "id": 22,
-    "category": "outdoor-plants",
+    "category": "garden-plants",
     "type": "hosta",
     "name": "Hosta 'June'",
     "description": "Hosta 'June' is one of the most popular hostas for good reason—it's a striking, medium-sized perennial that provides multi-season colour interest in shaded areas. Its thick, corrugated leaves feature a vibrant, irregular pattern: a bright chartreuse to gold center is sharply framed by broad blue-green margins. The colours intensify and shift depending on light exposure, making it a dynamic addition to borders, woodland gardens, or containers. In summer, it produces attractive lavender flowers. 'June' is known for its excellent slug resistance and is a must-have for adding bright texture and structure to shady spots.",
-    "quantity": 100,
-    "price": 15.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 15.99
+      },
+      {
+        "option":  "16cm",
+        "quantity": 100,
+        "price": 24.99
+      }
+    ],
     "image": "hosta-june.png"
   },
   {
     "id": 23,
-    "category": "outdoor-plants",
+    "category": "garden-plants",
     "type": "fuchsia",
     "name": "Fuchsia 'Ballet Girl'",
     "description": "A gorgeous, classic variety, Fuchsia 'Ballet Girl' lives up to its name with stunning, semi-double blooms that resemble a dancer in a tutu. It features brilliant scarlet-red sepals that reflex gracefully, revealing a voluminous skirt of pure, contrasting white petals. This upright fuchsia produces a lavish display of flowers all summer long until the first frost. Perfect for adding vibrant, exotic colour to patio containers, hanging baskets, or sheltered garden borders. 'Ballet Girl' prefers partial shade and a regular supply of water and feed to maintain its spectacular performance.",
-    "quantity": 100,
-    "price": 20.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 17.99
+      },
+      {
+        "option":  "16cm",
+        "quantity": 100,
+        "price": 25.99
+      }
+    ],
     "image": "fuchsia-ballet-girl.png"
   },
   {
     "id": 24,
-    "category": "outdoor-plants",
+    "category": "garden-plants",
     "type": "primula",
     "name": "Primula 'Cottage Cream'",
     "description": "Primula 'Cottage Cream' offers a delightful welcome to the spring garden with its charming, soft-hued flowers. This hardy perennial forms low rosettes of deep green leaves, above which rise clusters of double, creamy-yellow blooms. The ruffled, tightly packed petals give the flowers a luxurious texture, reminiscent of traditional cottage garden favourites. Ideal for planting in the front of borders, rock gardens, or in pots, 'Cottage Cream' provides reliable, early colour. It thrives in moist, well-drained soil in partial shade, bringing a gentle, vintage elegance to your outdoor space.",
-    "quantity":100,
-    "price": 5.50,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 7.99
+      },
+      {
+        "option":  "16cm",
+        "quantity": 100,
+        "price": 15.99
+      }
+    ],
     "image": "primula-cottage-cream.png"
   },
   {
     "id": 25,
-    "category": "outdoor-plants",
+    "category": "garden-plants",
     "type": "primula",
     "name": "Primula 'Showstopper Fire Dragon'",
     "description": "Ignite your spring garden with the spectacular Primula 'Showstopper Fire Dragon'. As its name suggests, this primula features deeply vibrant, double flowers that glow with intense shades of fiery red and deep orange-yellow. The 'Showstopper' series is known for its prolific blooming and excellent garden performance. Forming low mounds of fresh green foliage, the brilliant flowers rise above to create a dazzling, long-lasting display that truly stands out. Ideal for adding a powerful punch of colour to window boxes, patio containers, or the front of shady borders, it thrives in moist, well-drained soil and partial shade.",
-    "quantity": 100,
-    "price": 5.50,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 7.99
+      },
+      {
+        "option":  "16cm",
+        "quantity": 100,
+        "price": 15.99
+      }
+    ],
     "image": "primula-fire-dragon.png"
   },
   {
     "id": 26,
-    "category": "outdoor-plants",
+    "category": "garden-plants",
     "type": "grass",
     "name": "Muhlenbergia capillaris (Pink Muhly Grass)",
     "description": "Muhlenbergia capillaris, commonly known as Pink Muhly Grass, is a truly spectacular ornamental grass that creates a breathtaking cloud of colour in the autumn garden. From late summer into autumn, delicate, airy plumes emerge above its fine, dark green foliage, transforming into a magnificent pink haze. When backlit by the sun, the effect is absolutely ethereal and truly unforgettable. This drought-tolerant, low-maintenance grass forms attractive clumps, making it perfect for mass plantings, borders, or as an accent plant. Thriving in full sun and well-drained soil, Pink Muhly Grass adds incredible texture, movement, and a stunning burst of late-season beauty to any landscape.",
-    "quantity": 100,
-    "price": 12.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 12.5
+      },
+      {
+        "option":  "16cm",
+        "quantity": 100,
+        "price": 17.99
+      }
+    ],
     "image": "pink-muhly-grass.png"
   },
   {
     "id": 27,
-    "category": "outdoor-plants",
+    "category": "garden-plants",
     "type": "euonymus",
     "name": "Euonymus fortunei 'Emerald Gaiety'",
     "description": "Euonymus fortunei 'Emerald Gaiety' is an exceptionally versatile and reliable evergreen shrub, highly valued for its striking, year-round variegated foliage. Its small, glossy leaves feature a beautiful combination of deep green centers bordered by crisp, creamy white margins. As temperatures drop in winter, these margins often take on an attractive pink or rose blush, adding seasonal interest. This hardy plant can be grown as a dense groundcover, used for low hedging, or trained to climb walls or fences. Tolerant of a wide range of conditions, 'Emerald Gaiety' is an effortless way to introduce bright, consistent colour and texture to challenging areas of the garden, thriving in both sun and partial shade.",
-    "quantity": 100,
-    "price": 15.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 14.99
+      },
+      {
+        "option":  "16cm",
+        "quantity": 100,
+        "price": 26.99
+      }
+    ],
     "image": "euonymus-emerald.png"
   },
-    {
+  {
     "id": 28,
-    "category": "indoor-plants",
+    "category": "house-plants",
     "type": "anthurium",
     "name": "Anthurium 'Royal Red'",
     "description": "The Anthurium 'Royal Red' is a magnificent indoor plant, celebrated for its long-lasting, deep-red, heart-shaped 'flowers'. What appear to be petals are actually waxy, glossy spathes that emerge above the dark green, leathery foliage. The intense royal red colour of these spathes is truly captivating, creating a sophisticated tropical focal point in any room. Anthuriums are excellent air purifiers and provide nearly continuous blooming throughout the year under ideal conditions. They thrive in bright, indirect light and appreciate warm, humid environments, making them a perfect, low-maintenance choice for adding a bold splash of vibrant, exotic colour to your home or office.",
-    "quantity": 100,
-    "price": 14.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "6cm",
+        "quantity": 100,
+        "price": 9.99
+      },
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 14.99
+      },
+      {
+        "option":  "14cm",
+        "quantity": 100,
+        "price": 20.99
+      }
+    ],
     "image": "anturium-royal-red.png"
   },
-     {
+  {
     "id": 29,
-    "category": "indoor-plants",
+    "category": "house-plants",
     "type": "Saintpaulia",
     "name": "Saintpaulia 'Top Dark Blue' (African Violet)",
     "description": "Saintpaulia 'Top Dark Blue' is an exquisite variety of African Violet, cherished for its profusion of stunningly rich, deep blue-purple flowers. These vibrant blooms create a striking contrast against the plant's soft, velvety green leaves, forming a compact and charming display. African Violets are beloved houseplants for their ability to flower almost continuously, bringing a consistent burst of colour to any indoor setting. 'Top Dark Blue' is perfect for windowsills, desks, or as part of a small plant collection, thriving in bright, indirect light and appreciating consistent moisture without overwatering. It's an elegant and relatively easy-to-care-for plant that adds timeless beauty to your home.",
-    "quantity": 100,
-    "price": 15.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "6cm",
+        "quantity": 100,
+        "price": 5.99
+      },
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 11.99
+      },
+      {
+        "option":  "14cm",
+        "quantity": 100,
+        "price": 15.99
+      }
+    ],
     "image": "saintpaulia-dark-blue.png"
   },
-     {
+  {
     "id": 30,
-    "category": "indoor-plants",
+    "category": "house-plants",
     "type": "",
     "name": "Phalaenopsis 'Mini Mark' (Moth Orchid)",
     "description": "The Phalaenopsis 'Mini Mark' is a highly sought-after miniature Moth Orchid, celebrated for its unique and exquisite bloom pattern. The creamy-white petals are beautifully speckled with tiny, reddish-purple dots, often centered around a distinctive yellow or orange lip, creating an abstract, artistic 'mark'. This compact orchid is perfect for small spaces, windowsills, or as an elegant desk accent. Like all Moth Orchids, it offers an incredibly long blooming period, often lasting for months. It thrives in bright, indirect light and is a fantastic choice for adding sophisticated, low-maintenance beauty to your indoor environment.",
-    "quantity": 100,
-    "price": 15.99,
-    "isStock": true,
+    "options": [
+      {
+        "option":  "6cm",
+        "quantity": 100,
+        "price": 7.99
+      },
+      {
+        "option":  "10cm",
+        "quantity": 100,
+        "price": 15.99
+      },
+      {
+        "option":  "14cm",
+        "quantity": 100,
+        "price": 21.99
+      }
+    ],
     "image": "phal-mini-mark.png"
   }
-
 ]

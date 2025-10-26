@@ -1,33 +1,44 @@
 import { Button } from "react-bootstrap";
+import { Link } from "react-router";
+import type { ProductItem } from "common/types";
 
-interface ProductItem {
-  id: number;
-  name: string;
-  category: string;
-  price: number;
-  isStock: boolean;
-  image: string;
-}
+export default function ProductCard({product}: {product:ProductItem}) {
+  const imagePath = `/products/${product.category}/${product.image}`;
+  const altText = `The image of ${product.name}`;
+  const urlPath = `/products/${product.category}/${product.id}`;
 
-export default function ProductCard({
-  id,
-  name,
-  price,
-  isStock,
-  image,
-  category
-}: ProductItem) {
-  const imagePath = `/products/${category}/${image}`;
-  const altText = `The image of ${name}`;
+  //find minimum item price
+  const startPrice = product.options[0].price;
+  const minPrice = product.options.reduce(
+    (prev, curr) => (curr.price < prev ? curr.price : prev),
+    startPrice
+  );
+
+  //check if any options are in stock (quantity>0)
+  const maxQuantity = product.options.reduce(
+    (prevMax, curr) => (curr.quantity > prevMax ? curr.quantity : prevMax),
+    0
+  );
+  const isStock = maxQuantity > 0 ? true : false;
 
   return (
     <li className="product-card">
       <div>
-        <img src={imagePath} alt={altText} className="product-image" loading="lazy"/>
-        <h3>{name}</h3>
+        <Link to={urlPath} className="image-link">
+          <img
+            src={imagePath}
+            alt={altText}
+            className="card-image"
+            loading="lazy"
+          />
+        </Link>
+        <Link to={urlPath} className="name-link">
+          {" "}
+          <h3>{product.name}</h3>
+        </Link>
       </div>
       <div>
-        <p className="product-price">{price.toFixed(2)} &pound;</p>
+        <p className="product-price">{"from " + minPrice.toFixed(2)} &pound;</p>
         <Button variant="outline-success" className={isStock ? "" : "disabled"}>
           {isStock ? "Add to cart" : "Out of stock"}
         </Button>
