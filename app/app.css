@@ -187,6 +187,7 @@ a.navbar-brand {
   border-radius: 6px;
   padding: 0.4rem 0.6rem;
   margin: 0;
+  text-align: center;
 }
 
 .product-option-item:hover,
