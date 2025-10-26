@@ -6,7 +6,6 @@ export interface ProductItem {
   quantity: number;
   price: number;
   description: string;
-  isStock: boolean;
   image: string;
 }
 
