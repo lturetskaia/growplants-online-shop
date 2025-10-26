@@ -1,4 +1,4 @@
-export interface PlantOption {
+export interface ProductOption {
   option: string;
   price: number;
   quantity: number;
@@ -7,9 +7,10 @@ export interface PlantOption {
 export interface ProductItem {
   id: number;
   name: string;
+  description: string;
   category: string;
   type: string;
-  options: PlantOption[];
+  options: ProductOption[];
   image: string;
 }
 

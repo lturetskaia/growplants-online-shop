@@ -5,6 +5,7 @@ import ProductRating from "features/ProductRating";
 import ProductOptions from "features/ProductOptions";
 import { Carousel, Button, Accordion } from "react-bootstrap";
 import { useRef, useState } from "react";
+import type { ProductItem, ProductOption } from "common/types";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -21,8 +22,8 @@ export default function Product({ params }: Route.ComponentProps) {
   const inputRef = useRef<HTMLInputElement>(null);
   const productCategory = params.productCategory;
   const productId = Number(params.productId);
-  const reviews = null;
-  let product;
+  const reviews = null; // currently, there's no review data available
+  let product: ProductItem | undefined;
 
   if (
     productCategory === "house-plants" ||
@@ -41,15 +42,30 @@ export default function Product({ params }: Route.ComponentProps) {
     return <p> The item was not found!</p>;
   }
 
+  // the first product option is the default option
+  const [currOption, setCurOption] = useState<ProductOption>(
+    product.options[0]
+  );
+
   const imagePath = `/products/${productCategory}/${product.image}`;
   const altText = `The image of ${product.name}`;
 
+  //Change quantity input using +/- buttons
   function handleChangeQuantity(option: string) {
-    if (option === "increment" && userQuantity < product!.quantity) {
+    if (option === "increment" && userQuantity < currOption.quantity) {
       setUserQuantity(+inputRef.current!.value + 1);
     } else if (option === "decrement" && userQuantity > 0) {
       setUserQuantity(+inputRef.current!.value - 1);
     }
+  }
+
+  // Chpose product option
+  function handleChooseOption(optionName: string) {
+    const newOption = product!.options.filter(
+      (item) => item.option === optionName
+    );
+
+    setCurOption(newOption[0]);
   }
 
   return (
@@ -73,36 +89,46 @@ export default function Product({ params }: Route.ComponentProps) {
             <h2>{product.name}</h2>
             <ProductRating reviews={reviews} />
           </div>
-          <ProductOptions />
+          <ProductOptions
+            productOptions={product.options}
+            currOption={currOption.option}
+            handleChooseOption={handleChooseOption}
+          />
           <div>
             <p className="product-price left">
-              {product.price.toFixed(2)} &pound;
+              {currOption.price.toFixed(2)} &pound;
             </p>
             <div className="product-controls">
               <div className="add-to-cart-btngroup">
                 <div className="quantity-input">
-                  <button onClick={() => handleChangeQuantity("decrement")}>
+                  <button
+                    onClick={() => handleChangeQuantity("decrement")}
+                    className={currOption.quantity > 0 ? "" : "disabled"}
+                  >
                     {" "}
                     &ndash;
                   </button>
                   <input
                     type="number"
                     min="1"
-                    max={product.quantity}
+                    max={currOption.quantity}
                     step="1"
                     value={userQuantity}
                     ref={inputRef}
                     readOnly
                   />
-                  <button onClick={() => handleChangeQuantity("increment")}>
+                  <button
+                    onClick={() => handleChangeQuantity("increment")}
+                    className={currOption.quantity > 0 ? "" : "disabled"}
+                  >
                     +
                   </button>
                 </div>
                 <Button
                   variant="outline-success"
-                  className={product.quantity > 0 ? "" : "disabled"}
+                  className={currOption.quantity > 0 ? "" : "disabled"}
                 >
-                  {product.quantity > 0 ? "Add to cart" : "Out of stock"}
+                  {currOption.quantity > 0 ? "Add to cart" : "Out of stock"}
                 </Button>
               </div>
               <img

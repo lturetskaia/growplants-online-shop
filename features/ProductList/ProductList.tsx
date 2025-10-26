@@ -23,15 +23,7 @@ export default function ProductList({ category }: { category: string }) {
     content = (
       <ul className="products">
         {productData.map((product) => (
-          // <ProductCard
-          //   key={product.id}
-          //   id={product.id}
-          //   name={product.name}
-          //   minPrice={product.price}
-          //   image={product.image}
-          //   category={product.category}
-          // />
-          <ProductCard product={product} />
+          <ProductCard key={product.id} product={product} />
         ))}
         <li className="product-card empty"></li>
         <li className="product-card empty"></li>

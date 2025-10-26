@@ -1,16 +1,31 @@
-export default function ProductOptions() {
+import type { ProductOption } from "common/types";
+
+export default function ProductOptions({
+  productOptions,
+  currOption,
+  handleChooseOption,
+}: {
+  productOptions: ProductOption[];
+  currOption: string;
+  handleChooseOption: Function;
+}) {
+
+
   return (
-    <div className="product-options">
-      <p className="product-option-item">Option 1</p>
-      <p className="product-option-item">Option 2</p>
-      <p className="product-option-item">Option 3</p>
-      <p className="product-option-item">Option 4</p>
-      <p className="product-option-item">Option 5</p>
-      <p className="product-option-item">Option 6</p>
-      <p className="product-option-item active">Option 7</p>
-      <p className="product-option-item empty"></p>
-      <p className="product-option-item empty"></p>
-      <p className="product-option-item empty"></p>
-    </div>
+    <ul className="product-options">
+      {productOptions.map((item) => (
+        <li
+          className={item.option === currOption?"product-option-item active":"product-option-item"}
+          key={item.option}
+          onClick={() => handleChooseOption(item.option)}
+        >
+          {item.option}
+        </li>
+      ))}
+      {/* Empty list items for proper styling */}
+      <li className="product-option-item empty"></li>
+      <li className="product-option-item empty"></li>
+      <li className="product-option-item empty"></li>
+    </ul>
   );
 }
