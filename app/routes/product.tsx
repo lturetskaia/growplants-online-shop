@@ -2,6 +2,7 @@ import type { Route } from "../+types/root";
 import { useAppSelector } from "store/hooks";
 import type { RootState } from "store/reduxStore";
 import ProductRating from "features/ProductRating";
+import ProductOptions from "features/ProductOptions";
 import { Carousel, Button, Accordion } from "react-bootstrap";
 import { useRef, useState } from "react";
 
@@ -70,8 +71,9 @@ export default function Product({ params }: Route.ComponentProps) {
         <div className="product-info">
           <div>
             <h2>{product.name}</h2>
-            <ProductRating reviews={reviews}></ProductRating>
+            <ProductRating reviews={reviews} />
           </div>
+          <ProductOptions />
           <div>
             <p className="product-price left">
               {product.price.toFixed(2)} &pound;
