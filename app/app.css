@@ -112,6 +112,9 @@ a.navbar-brand {
   max-height: 100%;
   padding-bottom: 1rem;
 }
+.product-card a {
+  text-decoration: none;
+}
 
 .card-image {
   width: 100%;

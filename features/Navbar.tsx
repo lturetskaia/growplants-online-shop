@@ -29,8 +29,12 @@ export default function Navbar() {
           </Nav>
         </NavB.Collapse>
         <div>
-          <NavB.Brand href="/cart">
+          <NavB.Brand>
+          <NavLink to={"/cart"}>
             <img className="nav-icon" src="/icons/shopping-cart-icon.svg" />
+          </NavLink>
+            
+            
           </NavB.Brand>
         </div>
       </Container>

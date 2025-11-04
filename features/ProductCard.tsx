@@ -39,13 +39,14 @@ export default function ProductCard({ product }: { product: ProductItem }) {
       </div>
       <div>
         <p className="product-price">{"from " + minPrice.toFixed(2)} &pound;</p>
-        <Button 
-          href={urlPath}
-          variant="outline-success"
-          className={isStock ? "" : "disabled"}
-        >
-          {isStock ? "Choose options" : "Out of stock"}
-        </Button>
+        <Link to={urlPath}>
+          <Button
+            variant="outline-success"
+            className={isStock ? "" : "disabled"}
+          >
+            {isStock ? "Choose options" : "Out of stock"}
+          </Button>
+        </Link>
       </div>
     </li>
   );
