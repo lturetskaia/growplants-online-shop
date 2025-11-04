@@ -32,6 +32,10 @@ p {
   text-align: justify;
 }
 
+ul {
+  list-style: none;
+}
+
 .product-price {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.1rem;
@@ -87,7 +91,6 @@ a.navbar-brand {
   width: auto;
   justify-content: space-between;
   align-items: normal;
-  list-style: none;
   gap: 1.5rem;
   flex-wrap: wrap;
   padding: 0;
@@ -178,7 +181,6 @@ a.navbar-brand {
   gap: 1rem;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 .product-option-item {
@@ -199,7 +201,7 @@ a.navbar-brand {
 }
 
 .product-option-item.active {
-  background-color: rgba(250, 222, 200, 0.5);
+  background-color: rgba(255, 184, 154, 0.2);
   border-color: rgb(191, 111, 49);
 }
 
@@ -268,6 +270,7 @@ a.navbar-brand {
 /* Firefox */
 .quantity-input input[type="number"] {
   -moz-appearance: textfield;
+  appearance: none;
 }
 
 .accordion-item {
@@ -310,4 +313,72 @@ a.navbar-brand {
   border: none;
   padding: 0;
   margin: 0;
+}
+
+#cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 3rem 0;
+  padding: 0;
+}
+
+.cart-header {
+  display: grid;
+  direction: ltr;
+  grid-template-columns: 3.7fr 1fr 1fr 1fr 0.5fr;
+  justify-items: center;
+  background-color: rgb(202, 238, 220);
+}
+
+.cart-item {
+  display: grid;
+  direction: ltr;
+  grid-template-columns: 0.7fr 3fr 1fr 1fr 1fr 0.5fr;
+  justify-items: center;
+}
+
+.cart-item-info {
+  justify-self: left;
+  padding-left: 10px;
+}
+
+.cart-item-info p:nth-child(1) {
+  font-weight: bold;
+  color: rgb(6, 96, 66);
+}
+
+.cart-item img {
+  padding: 5px 10px 0px 0px;
+  width: 100%;
+}
+
+.cart-item button {
+  padding: 0 8px;
+  font-weight: bold;
+}
+
+#cart-summary {
+  width: 20%;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+#cart-summary p {
+  font-weight: bold;
+}
+
+.accent-btn {
+  background-color: rgba(255, 184, 154, 0.2);
+  border-color: rgb(191, 111, 49);
+}
+
+.accent-btn:hover,
+.accent-btn:focus {
+  background-color: rgba(255, 184, 154, 0.6);
+  color: black;
+  border-color: rgb(191, 111, 49);
 }
