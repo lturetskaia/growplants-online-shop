@@ -2,7 +2,7 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router";
 import type { ProductItem } from "common/types";
 
-export default function ProductCard({product}: {product:ProductItem}) {
+export default function ProductCard({ product }: { product: ProductItem }) {
   const imagePath = `/products/${product.category}/${product.image}`;
   const altText = `The image of ${product.name}`;
   const urlPath = `/products/${product.category}/${product.id}`;
@@ -39,8 +39,12 @@ export default function ProductCard({product}: {product:ProductItem}) {
       </div>
       <div>
         <p className="product-price">{"from " + minPrice.toFixed(2)} &pound;</p>
-        <Button variant="outline-success" className={isStock ? "" : "disabled"}>
-          {isStock ? "Add to cart" : "Out of stock"}
+        <Button 
+          href={urlPath}
+          variant="outline-success"
+          className={isStock ? "" : "disabled"}
+        >
+          {isStock ? "Choose options" : "Out of stock"}
         </Button>
       </div>
     </li>

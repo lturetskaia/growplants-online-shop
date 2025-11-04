@@ -21,7 +21,7 @@ export interface ProductReview {
   text: string;
 }
 
-export type ProductReviews = ProductReview[] | null[];
+export type ProductReviews = ProductReview[] | null;
 
 export interface CartItem {
   id: number;

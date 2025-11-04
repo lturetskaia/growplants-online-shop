@@ -1,11 +1,12 @@
 import type { Route } from "../+types/root";
-import { useAppSelector } from "store/hooks";
+import { useAppDispatch, useAppSelector } from "store/hooks";
 import type { RootState } from "store/reduxStore";
 import ProductRating from "features/ProductRating";
 import ProductOptions from "features/ProductOptions";
 import { Carousel, Button, Accordion } from "react-bootstrap";
 import { useRef, useState } from "react";
 import type { ProductItem, ProductOption } from "common/types";
+import { cartSliceActions } from "features/Cart/cartSlice";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -20,6 +21,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Product({ params }: Route.ComponentProps) {
   const [userQuantity, setUserQuantity] = useState(1);
   const inputRef = useRef<HTMLInputElement>(null);
+  const dispatch = useAppDispatch();
   const productCategory = params.productCategory;
   const productId = Number(params.productId);
   const reviews = null; // currently, there's no review data available
@@ -54,7 +56,7 @@ export default function Product({ params }: Route.ComponentProps) {
   function handleChangeQuantity(option: string) {
     if (option === "increment" && userQuantity < currOption.quantity) {
       setUserQuantity(+inputRef.current!.value + 1);
-    } else if (option === "decrement" && userQuantity > 0) {
+    } else if (option === "decrement" && userQuantity > 1) {
       setUserQuantity(+inputRef.current!.value - 1);
     }
   }
@@ -66,6 +68,16 @@ export default function Product({ params }: Route.ComponentProps) {
     );
 
     setCurOption(newOption[0]);
+  }
+
+  function handleAddToCart() {
+    //checks for quantity
+    const item = {
+      id: product!.id,
+      option: currOption.option,
+      quantity: userQuantity,
+    };
+    dispatch(cartSliceActions.addItem(item));
   }
 
   return (
@@ -127,6 +139,7 @@ export default function Product({ params }: Route.ComponentProps) {
                 <Button
                   variant="outline-success"
                   className={currOption.quantity > 0 ? "" : "disabled"}
+                  onClick={handleAddToCart}
                 >
                   {currOption.quantity > 0 ? "Add to cart" : "Out of stock"}
                 </Button>
