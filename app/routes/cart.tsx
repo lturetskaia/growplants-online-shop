@@ -18,7 +18,7 @@ export default function Cart() {
   const cartData = useAppSelector((state) => state.cart);
   if (cartData.length === 0) {
     return (
-      <div className="cart-empty">
+      <div id="cart-empty">
         <p>Your cart is empty.</p>
         <Link to="/">
           <Button className="btn btn-outline-success accent-btn">
