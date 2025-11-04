@@ -7,6 +7,7 @@ import { Carousel, Button, Accordion } from "react-bootstrap";
 import { useRef, useState } from "react";
 import type { ProductItem, ProductOption } from "common/types";
 import { cartSliceActions } from "features/Cart/cartSlice";
+import { getProductData } from "common/helperFunctions";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -25,26 +26,11 @@ export default function Product({ params }: Route.ComponentProps) {
   const productCategory = params.productCategory;
   const productId = Number(params.productId);
   const reviews = null; // currently, there's no review data available
-  let product: ProductItem | undefined;
-
-  if (
-    productCategory === "house-plants" ||
-    productCategory === "garden-plants"
-  ) {
-    product = useAppSelector((state) => state.plantProducts).find(
-      (product) => product.id === productId
-    );
-  } else if (productCategory === "pots-and-planters") {
-    product = useAppSelector(
-      (state: RootState) => state.potsPlantersProducts
-    ).find((product) => product.id === productId);
-  }
+  const product = getProductData(productId, productCategory);
 
   if (!product) {
     return <p> The item was not found!</p>;
   }
-
-  // the first product option is the default option
   const [currOption, setCurOption] = useState<ProductOption>(
     product.options[0]
   );
@@ -61,7 +47,7 @@ export default function Product({ params }: Route.ComponentProps) {
     }
   }
 
-  // Chpose product option
+  // Choose product option
   function handleChooseOption(optionName: string) {
     const newOption = product!.options.filter(
       (item) => item.option === optionName
@@ -74,7 +60,9 @@ export default function Product({ params }: Route.ComponentProps) {
     //checks for quantity
     const item = {
       id: product!.id,
+      name: product!.name,
       option: currOption.option,
+      category: product!.category,
       quantity: userQuantity,
     };
     dispatch(cartSliceActions.addItem(item));

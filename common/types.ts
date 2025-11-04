@@ -25,6 +25,8 @@ export type ProductReviews = ProductReview[] | null;
 
 export interface CartItem {
   id: number;
+  name: string;
+  category: string;
   option: string;
   quantity: number;
 }

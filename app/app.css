@@ -373,6 +373,9 @@ a.navbar-brand {
 #cart-summary p {
   font-weight: bold;
 }
+#cart-summary button {
+  width: 100%;
+}
 
 .accent-btn {
   background-color: rgba(255, 184, 154, 0.2);
