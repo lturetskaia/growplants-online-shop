@@ -19,17 +19,24 @@ const cartSlice = createSlice({
         //if the cart already has an entry with the same id and option
         //add quantity to the existing item
         if (index >= 0) {
-          console.log("update quantity");
           state[index].quantity += action.payload.quantity;
           return;
         }
       }
-      console.log("Update state");
       // otherwise, create a new entry
       state.push(action.payload);
     },
 
-    removeItem: (state) => {},
+    removeItem: (state, action) => {
+      if (state.length > 0) {
+        const updatedState = state.filter(
+          (cartItem) =>
+            cartItem.id !== action.payload.id &&
+            action.payload.option !== cartItem.option
+        );
+        state = [...updatedState];
+      }
+    },
   },
 });
 

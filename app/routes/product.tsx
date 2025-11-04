@@ -31,7 +31,7 @@ export default function Product({ params }: Route.ComponentProps) {
     productCategory === "house-plants" ||
     productCategory === "garden-plants"
   ) {
-    product = useAppSelector((state: RootState) => state.plantProducts).find(
+    product = useAppSelector((state) => state.plantProducts).find(
       (product) => product.id === productId
     );
   } else if (productCategory === "pots-and-planters") {

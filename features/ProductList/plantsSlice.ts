@@ -8,15 +8,9 @@ export const plantsSlice = createSlice({
     name: 'plantProducts',
     initialState,
     reducers: {
-
     }
 })
 
-// const getPlantsData = () => {
-//   return (dispatch) => {
-//     dispatch();
-//   }
-// }
 
 export const plantsActions = plantsSlice.actions;
 

@@ -8,12 +8,12 @@ export default function ProductList({ category }: { category: string }) {
   if (category === "pots-and-planters") {
     // get the tools slice
     productData = useAppSelector(
-      (state: RootState) => state.potsPlantersProducts
+      (state) => state.potsPlantersProducts
     );
   } else {
     //filter plants by category
     productData = useAppSelector(
-      (state: RootState) => state.plantProducts
+      (state) => state.plantProducts
     ).filter((product) => product.category === category);
   }
 
