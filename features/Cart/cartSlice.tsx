@@ -8,7 +8,6 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     addItem: (state, action) => {
-      console.log("Adding a new item to the cart", action.payload);
       if (state.length > 0) {
         const index = state.findIndex(
           (cartItem) =>
@@ -31,10 +30,10 @@ const cartSlice = createSlice({
       if (state.length > 0) {
         const updatedState = state.filter(
           (cartItem) =>
-            cartItem.id !== action.payload.id &&
-            action.payload.option !== cartItem.option
+            action.payload.option !== cartItem.option ||
+            cartItem.id !== action.payload.id
         );
-        state = [...updatedState];
+        return updatedState;
       }
     },
   },

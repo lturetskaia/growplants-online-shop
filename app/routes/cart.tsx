@@ -35,7 +35,7 @@ export default function Cart() {
       <div>
         <ul id="cart-items">
           {cartData.map((cartItem) => (
-            <CartItem cartItem={cartItem}></CartItem>
+            <CartItem key = {cartItem.id +cartItem.option} cartItem={cartItem}></CartItem>
           ))}
         </ul>
         <div id="cart-summary">

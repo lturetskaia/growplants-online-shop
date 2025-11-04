@@ -1,6 +1,8 @@
 import { Link } from "react-router";
 import { Button } from "react-bootstrap";
 import type { CartItem } from "common/types";
+import { useAppDispatch } from "store/hooks";
+import { cartSliceActions } from "./cartSlice";
 import {
   getProductData,
   constructImgPath,
@@ -9,6 +11,7 @@ import {
 } from "common/helperFunctions";
 
 export default function CartItem({ cartItem }: { cartItem: CartItem }) {
+  const dispatch = useAppDispatch();
   const productData = getProductData(cartItem.id, cartItem.category);
   let productQuantity = 0;
   let productPrice = 0;
@@ -32,6 +35,10 @@ export default function CartItem({ cartItem }: { cartItem: CartItem }) {
     return <></>;
   }
 
+  function handleDeleteCartItem() {
+    dispatch(cartSliceActions.removeItem(cartItem));
+  }
+
   return (
     <li className="cart-item">
       <div>
@@ -42,7 +49,7 @@ export default function CartItem({ cartItem }: { cartItem: CartItem }) {
       <div className="cart-item-info">
         <p>{cartItem.name}</p>
         <p>
-          {cartItem.category.includes('plants') ? "Size: " : "Colour: "}
+          {cartItem.category.includes("plants") ? "Size: " : "Colour: "}
           {cartItem.option}
         </p>
       </div>
@@ -50,7 +57,12 @@ export default function CartItem({ cartItem }: { cartItem: CartItem }) {
       <div>{cartItem.quantity}</div>
       <div>{cartItem.quantity * productPrice}</div>
       <div>
-        <Button className="btn btn-outline-success delete-btn">X</Button>
+        <Button
+          className="btn btn-outline-success delete-btn"
+          onClick={handleDeleteCartItem}
+        >
+          X
+        </Button>
       </div>
     </li>
   );
