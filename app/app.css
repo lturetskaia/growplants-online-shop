@@ -114,6 +114,7 @@ a.navbar-brand {
 }
 .product-card a {
   text-decoration: none;
+  color: rgb(4, 79, 54);
 }
 
 .card-image {
@@ -393,4 +394,9 @@ a.navbar-brand {
   background-color: rgba(255, 184, 154, 0.6);
   color: black;
   border-color: rgb(191, 111, 49);
+}
+
+.btn.accent-btn:active {
+  background-color: rgba(255, 184, 154, 0.9);
+  color: black;
 }
