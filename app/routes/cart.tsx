@@ -67,7 +67,7 @@ export default function Cart() {
           ))}
         </ul>
         <div id="cart-summary">
-          <p>TOTAL: {totalPrice} </p>
+          <p>TOTAL: &pound;{totalPrice.toFixed(2)} </p>
           <Link to="">
             <Button className="btn btn-outline-success"> Check out</Button>
           </Link>

@@ -55,9 +55,9 @@ export default function CartItem({ cartItem }: { cartItem: CartItem }) {
           {cartItem.option}
         </p>
       </div>
-      <div>{productPrice}</div>
+      <div>&pound;{productPrice.toFixed(2)}</div>
       <div>{cartItem.quantity}</div>
-      <div>{cartItem.quantity * productPrice}</div>
+      <div>&pound;{(cartItem.quantity * productPrice).toFixed(2)}</div>
       <div>
         <Button
           className="btn btn-outline-success delete-btn"
