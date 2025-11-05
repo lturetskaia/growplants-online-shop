@@ -333,6 +333,8 @@ a.navbar-brand {
   grid-template-columns: 3.7fr 1fr 1fr 1fr 0.5fr;
   justify-items: center;
   background-color: rgb(202, 238, 220);
+  padding: 10px 0;
+  color: black;
 }
 
 .cart-item {
