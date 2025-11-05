@@ -1,11 +1,12 @@
 import type { Route } from "../+types/root";
-import { useAppSelector } from "store/hooks";
-import type { RootState } from "store/reduxStore";
+import { useAppDispatch, useAppSelector } from "store/hooks";
 import ProductRating from "features/ProductRating";
 import ProductOptions from "features/ProductOptions";
 import { Carousel, Button, Accordion } from "react-bootstrap";
 import { useRef, useState } from "react";
 import type { ProductItem, ProductOption } from "common/types";
+import { cartSliceActions } from "features/Cart/cartSlice";
+import { getProductData } from "common/helperFunctions";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -18,31 +19,20 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Product({ params }: Route.ComponentProps) {
+  const plantsData = useAppSelector((state) => state.plantProducts);
+  const potsData = useAppSelector((state) => state.potsPlantersProducts);
+
   const [userQuantity, setUserQuantity] = useState(1);
   const inputRef = useRef<HTMLInputElement>(null);
+  const dispatch = useAppDispatch();
   const productCategory = params.productCategory;
   const productId = Number(params.productId);
   const reviews = null; // currently, there's no review data available
-  let product: ProductItem | undefined;
-
-  if (
-    productCategory === "house-plants" ||
-    productCategory === "garden-plants"
-  ) {
-    product = useAppSelector((state: RootState) => state.plantProducts).find(
-      (product) => product.id === productId
-    );
-  } else if (productCategory === "pots-and-planters") {
-    product = useAppSelector(
-      (state: RootState) => state.potsPlantersProducts
-    ).find((product) => product.id === productId);
-  }
+  const product = getProductData(productId, productCategory, plantsData, potsData);
 
   if (!product) {
     return <p> The item was not found!</p>;
   }
-
-  // the first product option is the default option
   const [currOption, setCurOption] = useState<ProductOption>(
     product.options[0]
   );
@@ -54,18 +44,30 @@ export default function Product({ params }: Route.ComponentProps) {
   function handleChangeQuantity(option: string) {
     if (option === "increment" && userQuantity < currOption.quantity) {
       setUserQuantity(+inputRef.current!.value + 1);
-    } else if (option === "decrement" && userQuantity > 0) {
+    } else if (option === "decrement" && userQuantity > 1) {
       setUserQuantity(+inputRef.current!.value - 1);
     }
   }
 
-  // Chpose product option
+  // Choose product option
   function handleChooseOption(optionName: string) {
     const newOption = product!.options.filter(
       (item) => item.option === optionName
     );
 
     setCurOption(newOption[0]);
+  }
+
+  function handleAddToCart() {
+    //checks for quantity
+    const item = {
+      id: product!.id,
+      name: product!.name,
+      option: currOption.option,
+      category: product!.category,
+      quantity: userQuantity,
+    };
+    dispatch(cartSliceActions.addItem(item));
   }
 
   return (
@@ -96,7 +98,7 @@ export default function Product({ params }: Route.ComponentProps) {
           />
           <div>
             <p className="product-price left">
-              {currOption.price.toFixed(2)} &pound;
+              &pound;{currOption.price.toFixed(2)} 
             </p>
             <div className="product-controls">
               <div className="add-to-cart-btngroup">
@@ -127,6 +129,7 @@ export default function Product({ params }: Route.ComponentProps) {
                 <Button
                   variant="outline-success"
                   className={currOption.quantity > 0 ? "" : "disabled"}
+                  onClick={handleAddToCart}
                 >
                   {currOption.quantity > 0 ? "Add to cart" : "Out of stock"}
                 </Button>
