@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import NavB from "react-bootstrap/Navbar";
 import { NavLink} from "react-router";
+import CartBadge from "./Cart/CartBadge";
 
 export default function Navbar() {
   return (
@@ -28,13 +29,12 @@ export default function Navbar() {
             </Nav.Link>
           </Nav>
         </NavB.Collapse>
-        <div>
+        <div id="cart-icon-div">
           <NavB.Brand>
           <NavLink to={"/cart"}>
             <img className="nav-icon" src="/icons/shopping-cart-icon.svg" />
           </NavLink>
-            
-            
+          <CartBadge />  
           </NavB.Brand>
         </div>
       </Container>
