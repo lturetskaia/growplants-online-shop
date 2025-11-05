@@ -1,6 +1,5 @@
 import type { Route } from "../+types/root";
 import { useAppDispatch, useAppSelector } from "store/hooks";
-import type { RootState } from "store/reduxStore";
 import ProductRating from "features/ProductRating";
 import ProductOptions from "features/ProductOptions";
 import { Carousel, Button, Accordion } from "react-bootstrap";
@@ -20,13 +19,16 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Product({ params }: Route.ComponentProps) {
+  const plantsData = useAppSelector((state) => state.plantProducts);
+  const potsData = useAppSelector((state) => state.potsPlantersProducts);
+
   const [userQuantity, setUserQuantity] = useState(1);
   const inputRef = useRef<HTMLInputElement>(null);
   const dispatch = useAppDispatch();
   const productCategory = params.productCategory;
   const productId = Number(params.productId);
   const reviews = null; // currently, there's no review data available
-  const product = getProductData(productId, productCategory);
+  const product = getProductData(productId, productCategory, plantsData, potsData);
 
   if (!product) {
     return <p> The item was not found!</p>;
@@ -96,7 +98,7 @@ export default function Product({ params }: Route.ComponentProps) {
           />
           <div>
             <p className="product-price left">
-              {currOption.price.toFixed(2)} &pound;
+              &pound;{currOption.price.toFixed(2)} 
             </p>
             <div className="product-controls">
               <div className="add-to-cart-btngroup">

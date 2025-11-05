@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import { Button } from "react-bootstrap";
 import type { CartItem } from "common/types";
-import { useAppDispatch } from "store/hooks";
+import { useAppDispatch, useAppSelector } from "store/hooks";
 import { cartSliceActions } from "./cartSlice";
 import {
   getProductData,
@@ -11,8 +11,10 @@ import {
 } from "common/helperFunctions";
 
 export default function CartItem({ cartItem }: { cartItem: CartItem }) {
+  const plantsData = useAppSelector((state) => state.plantProducts);
+    const potsData = useAppSelector((state) => state.potsPlantersProducts);
   const dispatch = useAppDispatch();
-  const productData = getProductData(cartItem.id, cartItem.category);
+  const productData = getProductData(cartItem.id, cartItem.category,plantsData,potsData);
   let productQuantity = 0;
   let productPrice = 0;
   let imgPath;

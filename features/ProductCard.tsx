@@ -38,7 +38,7 @@ export default function ProductCard({ product }: { product: ProductItem }) {
         </Link>
       </div>
       <div>
-        <p className="product-price">{"from " + minPrice.toFixed(2)} &pound;</p>
+        <p className="product-price">{"from  \u00A3" + `` + minPrice.toFixed(2)} </p>
         <Link to={urlPath}>
           <Button
             variant="outline-success"
