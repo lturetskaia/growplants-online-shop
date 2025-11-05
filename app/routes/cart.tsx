@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 import { useAppSelector } from "store/hooks";
 import CartItem from "features/Cart/CartItem";
 import { Link } from "react-router";
+import { getPrice, getProductData } from "common/helperFunctions";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -29,17 +30,42 @@ export default function Cart() {
     );
   }
 
+  let totalPrice = 0;
+  //calculate total cart price
+  for (const cartItem of cartData) {
+    const productData = getProductData(cartItem.id, cartItem.category);
+    let productPrice = 0;
+    let productQuantity = 0;
+
+    if (productData) {
+      const productOption = productData.options.find(
+        (item) => item.option === cartItem.option
+      );
+
+      productPrice = productOption?.price || 0;
+      productQuantity = productOption?.quantity || 0;
+    }
+    const isExceedingQuantity = (productQuantity-cartItem.quantity)<0;
+    // only if we have price data and the product is in stock
+    if(productPrice > 0 && !isExceedingQuantity){
+      totalPrice += cartItem.quantity*productPrice;
+    }
+  }
+
   return (
     <>
       <h2>Your Cart</h2>
       <div>
         <ul id="cart-items">
           {cartData.map((cartItem) => (
-            <CartItem key = {cartItem.id +cartItem.option} cartItem={cartItem}></CartItem>
+            <CartItem
+              key={cartItem.id + cartItem.option}
+              cartItem={cartItem}
+            ></CartItem>
           ))}
         </ul>
         <div id="cart-summary">
-          <p>TOTAL:</p>
+          <p>TOTAL: {totalPrice}</p>
           <Link to="">
             <Button className="btn btn-outline-success"> Check out</Button>
           </Link>

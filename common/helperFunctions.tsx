@@ -21,6 +21,24 @@ export function getProductData(id: number, category: string | undefined) {
   return product;
 }
 
+export function getPrice(
+  id: number,
+  category: string | undefined,
+  option: string
+) {
+  const productData = getProductData(id, category);
+
+  if (productData) {
+    const productOption = productData.options.find(
+      (item) => item.option === option
+    );
+    if (productOption) {
+      return productOption;
+    }
+  }
+  return null;
+}
+
 export function constructImgPath(category: string, image: string) {
   return `/products/${category}/${image}`;
 }
@@ -29,6 +47,6 @@ export function constructAltText(name: string) {
   return `The image of ${name}`;
 }
 
-export function constructURLPath( id: number, category: string,) {
+export function constructURLPath(id: number, category: string) {
   return `/products/${category}/${id}`;
 }
