@@ -13,7 +13,7 @@ This is a modern e-commerce website with responsive design that sells plants and
 - ⚡️ Vite for development and building
 
 
-### Have a look!
+## Have a look!
 
 The project is still in development but you can run it locally with the following steps:
 
