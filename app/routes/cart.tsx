@@ -58,7 +58,13 @@ export default function Cart() {
     <>
       <h2>Your Cart</h2>
       <div>
-        <ul id="cart-items">
+        <ul className="cart-items">
+          <li className='cart-header'>
+            <div>Item</div>
+            <div>Price</div>
+            <div>Quantity</div>
+            <div>Total price</div>
+          </li>
           {cartData.map((cartItem) => (
             <CartItem
               key={cartItem.id + cartItem.option}

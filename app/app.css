@@ -319,7 +319,7 @@ a.navbar-brand {
   margin: 0;
 }
 
-#cart-items {
+.cart-items {
   display: flex;
   flex-direction: column;
   gap: 2rem;
