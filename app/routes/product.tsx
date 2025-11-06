@@ -7,6 +7,7 @@ import { useRef, useState } from "react";
 import type { ProductItem, ProductOption } from "common/types";
 import { cartSliceActions } from "features/Cart/cartSlice";
 import { getProductData } from "common/helperFunctions";
+import QuantityInput from "features/QuantityInput";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -43,9 +44,9 @@ export default function Product({ params }: Route.ComponentProps) {
   //Change quantity input using +/- buttons
   function handleChangeQuantity(option: string) {
     if (option === "increment" && userQuantity < currOption.quantity) {
-      setUserQuantity(+inputRef.current!.value + 1);
+      setUserQuantity(userQuantity + 1);
     } else if (option === "decrement" && userQuantity > 1) {
-      setUserQuantity(+inputRef.current!.value - 1);
+      setUserQuantity(userQuantity - 1);
     }
   }
 
@@ -102,30 +103,7 @@ export default function Product({ params }: Route.ComponentProps) {
             </p>
             <div className="product-controls">
               <div className="add-to-cart-btngroup">
-                <div className="quantity-input">
-                  <button
-                    onClick={() => handleChangeQuantity("decrement")}
-                    className={currOption.quantity > 0 ? "" : "disabled"}
-                  >
-                    {" "}
-                    &ndash;
-                  </button>
-                  <input
-                    type="number"
-                    min="1"
-                    max={currOption.quantity}
-                    step="1"
-                    value={userQuantity}
-                    ref={inputRef}
-                    readOnly
-                  />
-                  <button
-                    onClick={() => handleChangeQuantity("increment")}
-                    className={currOption.quantity > 0 ? "" : "disabled"}
-                  >
-                    +
-                  </button>
-                </div>
+                <QuantityInput userQuantity={userQuantity} maxQuantity={currOption.quantity} handleChangeQuantity={handleChangeQuantity}/>
                 <Button
                   variant="outline-success"
                   className={currOption.quantity > 0 ? "" : "disabled"}

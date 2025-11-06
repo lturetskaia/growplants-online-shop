@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { CartData } from "common/types";
+import type { CartItem } from "common/types";
 
 const initialState: CartData = [];
 
@@ -34,6 +35,42 @@ const cartSlice = createSlice({
             cartItem.id !== action.payload.id
         );
         return updatedState;
+      }
+    },
+
+    decrementQuantity(state, action: { payload: CartItem }) {
+      if (state.length > 0) {
+        const index = state.findIndex(
+          (cartItem) =>
+            cartItem.id === action.payload.id &&
+            action.payload.option === cartItem.option
+        );
+
+        //if the entry is found
+        //decrease the quantity to the existing item by 1
+        if (index >= 0) {
+          {
+            state[index].quantity -= 1;
+            return;
+          }
+        }
+      }
+    },
+
+    incrementQuantity(state, action) {
+      if (state.length > 0) {
+        const index = state.findIndex(
+          (cartItem) =>
+            cartItem.id === action.payload.id &&
+            action.payload.option === cartItem.option
+        );
+
+        //if the entry is found
+        //increase the quantity to the existing item by 1
+        if (index >= 0) {
+          state[index].quantity += 1;
+          return;
+        }
       }
     },
   },

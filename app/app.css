@@ -262,14 +262,7 @@ a.navbar-brand {
 
 .add-to-cart-btngroup {
   display: flex;
-}
-
-.quantity-input {
-  margin-right: 10px;
-}
-
-.add-to-cart-btngroup .btn {
-  margin-left: 10px;
+  gap: 1rem;
 }
 
 .quantity-input input {
