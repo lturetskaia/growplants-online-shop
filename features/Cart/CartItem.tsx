@@ -9,12 +9,18 @@ import {
   constructAltText,
   constructURLPath,
 } from "common/helperFunctions";
+import QuantityInput from "features/QuantityInput";
 
 export default function CartItem({ cartItem }: { cartItem: CartItem }) {
   const plantsData = useAppSelector((state) => state.plantProducts);
-    const potsData = useAppSelector((state) => state.potsPlantersProducts);
+  const potsData = useAppSelector((state) => state.potsPlantersProducts);
   const dispatch = useAppDispatch();
-  const productData = getProductData(cartItem.id, cartItem.category,plantsData,potsData);
+  const productData = getProductData(
+    cartItem.id,
+    cartItem.category,
+    plantsData,
+    potsData
+  );
   let productQuantity = 0;
   let productPrice = 0;
   let imgPath;
@@ -41,6 +47,16 @@ export default function CartItem({ cartItem }: { cartItem: CartItem }) {
     dispatch(cartSliceActions.removeItem(cartItem));
   }
 
+  function handleChangeQuantity(option: string) {
+    if (cartItem.quantity === 1 && option === "decrement") {
+      dispatch(cartSliceActions.removeItem(cartItem));
+    } else if (cartItem.quantity > 1 && option === "decrement") {
+      dispatch(cartSliceActions.decrementQuantity(cartItem));
+    } else if (cartItem.quantity < productQuantity && option === "increment") {
+      dispatch(cartSliceActions.incrementQuantity(cartItem));
+    }
+  }
+
   return (
     <li className="cart-item">
       <div>
@@ -56,7 +72,13 @@ export default function CartItem({ cartItem }: { cartItem: CartItem }) {
         </p>
       </div>
       <div>&pound;{productPrice.toFixed(2)}</div>
-      <div>{cartItem.quantity}</div>
+      <div>
+        <QuantityInput
+          userQuantity={cartItem.quantity}
+          maxQuantity={productQuantity}
+          handleChangeQuantity={handleChangeQuantity}
+        />
+      </div>
       <div>&pound;{(cartItem.quantity * productPrice).toFixed(2)}</div>
       <div>
         <Button
