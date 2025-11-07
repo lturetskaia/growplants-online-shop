@@ -6,6 +6,7 @@ export default function CartBadge() {
     (prevQuantity, currItem) => prevQuantity + currItem.quantity,
     0
   );
+//  const  totalQuantity = 10;
   let visibityClass = "";
 
   if (totalQuantity === 0) {
