@@ -18,12 +18,10 @@ listenerMiddleware.startListening({
   ),
   effect: () => {
     const cartState = store.getState().cart;
-    console.log(cartState);
     try {
       localStorage.setItem("cart", JSON.stringify(cartState));
-      console.log(localStorage.getItem("cart"));
     } catch (err) {
-      //Ignore write errors for now
+      //Ignore write errors for local storage
     }
   },
 });
