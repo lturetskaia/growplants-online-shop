@@ -6,7 +6,7 @@ export default function CategoryList() {
   return (
     <ul id="categories">
       {categoryList.map((cat) => (
-        <li className="category-item">
+        <li className="category-item" key={cat.name}>
           <div className="category-image">
             <img src={`/common/${cat.name}.jpg`} alt="The image showing .." />
           </div>
