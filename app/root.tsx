@@ -52,9 +52,7 @@ export default function App() {
   return (
     <Provider store={store}>
       <Navbar />
-      <main>
         <Outlet />
-      </main>
     </Provider>
   );
 }

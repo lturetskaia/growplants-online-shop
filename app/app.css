@@ -7,13 +7,20 @@ main {
   padding: 3rem 0;
   width: 90%;
   max-width: 1300px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 main img {
   display: block;
   align-self: center;
   margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -34,6 +41,64 @@ p {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.category-item {
+  width: 100%;
+  display: flex;
+}
+
+.category-description {
+  padding: 0 1rem;
+  order: 2;
+}
+
+.category-image {
+  order: 1;
+}
+
+.category-item:nth-child(even) .category-description {
+  order: 1;
+}
+.category-item:nth-child(even) .category-image {
+  order: 2;
+}
+
+.category-item div {
+  width: 50%;
+  justify-items: center;
+  align-content: center;
+}
+
+.category-item img {
+  margin: 0;
+  height: 500px;
+}
+
+.category-item button {
+  display: block;
+}
+
+#hero-description {
+  background-color: rgb(93, 110, 91);
+  padding: 2rem 0;
+}
+
+#hero-description p {
+  text-align: center;
+  color: rgb(216, 238, 216);
+}
+
+#hero-image {
+  width: 100%;
 }
 
 .product-price {
