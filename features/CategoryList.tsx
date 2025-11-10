@@ -1,6 +1,6 @@
 import { Button } from "react-bootstrap";
 import {NavLink} from "react-router";
-import categoryList from "../backend/categoryList.json";
+import categoryList from "../backend/data/categoryList.json";
 
 export default function CategoryList() {
   return (
