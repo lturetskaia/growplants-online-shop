@@ -13,5 +13,9 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function GardenPlants() {
-  return <ProductList category="garden-plants" />;
+  return (
+    <main>
+      <ProductList category="garden-plants" />
+    </main>
+  );
 }

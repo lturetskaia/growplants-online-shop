@@ -18,7 +18,7 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Cart() {
   const [isClient, setIsClient] = useState(false);
-// prevent server-side pre-render
+  // prevent server-side pre-render
   useEffect(() => {
     setIsClient(true);
   }, []);
@@ -100,5 +100,5 @@ export default function Cart() {
     );
   }
 
-  return (isClient? content : null);
+  return <main>{isClient ? content : null}</main>;
 }

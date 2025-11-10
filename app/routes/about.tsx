@@ -5,12 +5,15 @@ export function meta({}: Route.MetaArgs) {
     { title: "Greenery Awaits" },
     {
       name: "description",
-      content:
-        "Find out more about our company ",
+      content: "Find out more about our company ",
     },
   ];
 }
 
 export default function About() {
-  return <div>About Page</div>;
+  return (
+    <main>
+      <div>About Page</div>
+    </main>
+  );
 }
