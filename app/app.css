@@ -400,10 +400,11 @@ a.navbar-brand {
 }
 
 .empty {
-  height: 0;
-  border: none;
-  padding: 0;
-  margin: 0;
+  /* height: 0; */
+   border: transparent;
+   min-width: 300px;
+  /*padding: 0;
+  margin: 0; */
 }
 
 .cart-items {
