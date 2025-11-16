@@ -424,8 +424,9 @@ a.navbar-brand {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin: 3rem 0;
-  padding: 0;
+  margin: 3rem 0 2rem 0;
+  border-bottom:solid 1px rgb(215, 213, 213);
+  padding: 0 0 2rem 0;
 }
 
 .cart-item-overlay {
