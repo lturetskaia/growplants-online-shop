@@ -57,21 +57,32 @@ export default function CartItem({ cartItem }: { cartItem: CartItem }) {
     }
   }
 
+  const cartOverlayClass =
+    productQuantity === 0 ? "cart-item-overlay" : "cart-item-overlay-hidden";
+
   return (
     <li className="cart-item">
+      <div className={cartOverlayClass}></div>
       <div>
         <Link to={urlPath}>
           <img src={imgPath} alt={altText} />
         </Link>
       </div>
       <div className="cart-item-info">
-        <p>{cartItem.name}</p>
+        <p className={productQuantity === 0 ? "strikethrough" : ""}>
+          {cartItem.name}
+        </p>
         <p>
           {cartItem.category.includes("plants") ? "Size: " : "Colour: "}
           {cartItem.option}
         </p>
+        {productQuantity === 0 ? (
+          <p className="out-of-stock">out of stock</p>
+        ) : null}
       </div>
-      <div>&pound;{productPrice.toFixed(2)}</div>
+      <div className={productQuantity === 0 ? "strikethrough" : ""}>
+        &pound;{productPrice.toFixed(2)}
+      </div>
       <div>
         <QuantityInput
           userQuantity={cartItem.quantity}
@@ -79,8 +90,10 @@ export default function CartItem({ cartItem }: { cartItem: CartItem }) {
           handleChangeQuantity={handleChangeQuantity}
         />
       </div>
-      <div>&pound;{(cartItem.quantity * productPrice).toFixed(2)}</div>
-      <div>
+      <div className={productQuantity === 0 ? "strikethrough" : ""}>
+        &pound;{(cartItem.quantity * productPrice).toFixed(2)}
+      </div>
+      <div className="delete-btn-div">
         <Button
           className="btn btn-outline-success delete-btn"
           onClick={handleDeleteCartItem}

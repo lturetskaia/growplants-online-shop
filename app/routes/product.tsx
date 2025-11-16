@@ -29,7 +29,12 @@ export default function Product({ params }: Route.ComponentProps) {
   const productCategory = params.productCategory;
   const productId = Number(params.productId);
   const reviews = null; // currently, there's no review data available
-  const product = getProductData(productId, productCategory, plantsData, potsData);
+  const product = getProductData(
+    productId,
+    productCategory,
+    plantsData,
+    potsData
+  );
 
   if (!product) {
     return <p> The item was not found!</p>;
@@ -55,8 +60,9 @@ export default function Product({ params }: Route.ComponentProps) {
     const newOption = product!.options.filter(
       (item) => item.option === optionName
     );
-
-    setCurOption(newOption[0]);
+    if (newOption[0].quantity > 0) {
+      setCurOption(newOption[0]);
+    }
   }
 
   function handleAddToCart() {
@@ -72,7 +78,7 @@ export default function Product({ params }: Route.ComponentProps) {
   }
 
   return (
-    <>
+    <main>
       <section className="product-main">
         <div className="product-gallery">
           <Carousel>
@@ -89,7 +95,7 @@ export default function Product({ params }: Route.ComponentProps) {
         </div>
         <div className="product-info">
           <div>
-            <h2>{product.name}</h2>
+            <h2 className="product-page-title">{product.name}</h2>
             <ProductRating reviews={reviews} />
           </div>
           <ProductOptions
@@ -99,11 +105,15 @@ export default function Product({ params }: Route.ComponentProps) {
           />
           <div>
             <p className="product-price left">
-              &pound;{currOption.price.toFixed(2)} 
+              &pound;{currOption.price.toFixed(2)}
             </p>
             <div className="product-controls">
               <div className="add-to-cart-btngroup">
-                <QuantityInput userQuantity={userQuantity} maxQuantity={currOption.quantity} handleChangeQuantity={handleChangeQuantity}/>
+                <QuantityInput
+                  userQuantity={userQuantity}
+                  maxQuantity={currOption.quantity}
+                  handleChangeQuantity={handleChangeQuantity}
+                />
                 <Button
                   variant="outline-success"
                   className={currOption.quantity > 0 ? "" : "disabled"}
@@ -164,6 +174,6 @@ export default function Product({ params }: Route.ComponentProps) {
           </Accordion.Item>
         </Accordion>
       </section>
-    </>
+    </main>
   );
 }

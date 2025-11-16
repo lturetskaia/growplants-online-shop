@@ -38,7 +38,7 @@
       },
       {
         "option":  "10cm",
-        "quantity": 100,
+        "quantity": 0,
         "price": 8.99
       },
       {
@@ -58,17 +58,17 @@
     "options": [
       {
         "option":  "6cm",
-        "quantity": 100,
+        "quantity": 0,
         "price": 6.99
       },
       {
         "option":  "10cm",
-        "quantity": 100,
+        "quantity": 0,
         "price": 10.99
       },
       {
         "option":  "14cm",
-        "quantity": 100,
+        "quantity": 0,
         "price": 16.99
       }
     ],
@@ -183,17 +183,17 @@
     "options": [
       {
         "option":  "6cm",
-        "quantity": 100,
+        "quantity": 0,
         "price": 4.99
       },
       {
         "option":  "10cm",
-        "quantity": 100,
+        "quantity": 0,
         "price": 9.99
       },
       {
         "option":  "14cm",
-        "quantity": 100,
+        "quantity": 0,
         "price": 15.99
       }
     ],
@@ -505,12 +505,12 @@
     "options": [
       {
         "option":  "10cm",
-        "quantity": 100,
+        "quantity": 0,
         "price": 17.99
       },
       {
         "option":  "16cm",
-        "quantity": 100,
+        "quantity": 0,
         "price": 25.99
       }
     ],
@@ -545,12 +545,12 @@
     "options": [
       {
         "option":  "10cm",
-        "quantity": 100,
+        "quantity": 0,
         "price": 7.99
       },
       {
         "option":  "16cm",
-        "quantity": 100,
+        "quantity": 0,
         "price": 15.99
       }
     ],

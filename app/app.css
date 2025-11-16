@@ -30,6 +30,10 @@ h2 {
   text-align: center;
 }
 
+h2.product-page-title {
+  text-align: left;
+}
+
 h3 {
   font-size: 1.2rem;
   margin: 10px 0;
@@ -303,6 +307,15 @@ a.navbar-brand {
   border-color: rgb(191, 111, 49);
 }
 
+.product-option-item.disabled {
+  background-color: rgb(244, 241, 241);
+  cursor: not-allowed;
+}
+.product-option-item.disabled:hover,
+.product-option-item.disabled:focus {
+  box-shadow: none;
+}
+
 .product-price.left {
   margin-top: 0.5rem;
   padding-left: 30px;
@@ -400,18 +413,35 @@ a.navbar-brand {
 }
 
 .empty {
-  height: 0;
-  border: none;
-  padding: 0;
-  margin: 0;
+  /* height: 0; */
+  border: transparent;
+  min-width: 300px;
+  /*padding: 0;
+  margin: 0; */
 }
 
 .cart-items {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin: 3rem 0;
-  padding: 0;
+  margin: 3rem 0 2rem 0;
+  border-bottom:solid 1px rgb(215, 213, 213);
+  padding: 0 0 2rem 0;
+}
+
+.cart-item-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+.cart-item-overlay-hidden {
+  display: none;
+}
+
+.delete-btn-div {
+  z-index: 1;
 }
 
 .cart-header {
@@ -425,6 +455,7 @@ a.navbar-brand {
 }
 
 .cart-item {
+  position: relative;
   display: grid;
   direction: ltr;
   grid-template-columns: 0.7fr 3fr 1fr 1fr 1fr 0.5fr;
@@ -434,6 +465,19 @@ a.navbar-brand {
 .cart-item-info {
   justify-self: left;
   padding-left: 10px;
+}
+
+.out-of-stock {
+  display: block;
+  width: fit-content;
+  padding: 1px 5px;
+  margin: 0;
+  color: rgb(195, 8, 8);
+  border: solid 1px rgb(195, 8, 8);
+  border-radius: 6px;
+}
+.strikethrough {
+  text-decoration: line-through;
 }
 
 .cart-item-info p:nth-child(1) {
