@@ -307,6 +307,15 @@ a.navbar-brand {
   border-color: rgb(191, 111, 49);
 }
 
+.product-option-item.disabled {
+  background-color: rgb(244, 241, 241);
+  cursor: not-allowed;
+}
+.product-option-item.disabled:hover,
+.product-option-item.disabled:focus {
+  box-shadow: none;
+}
+
 .product-price.left {
   margin-top: 0.5rem;
   padding-left: 30px;
@@ -430,7 +439,7 @@ a.navbar-brand {
   display: none;
 }
 
-.delete-btn-div{
+.delete-btn-div {
   z-index: 1;
 }
 
