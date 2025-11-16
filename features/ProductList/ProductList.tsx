@@ -1,4 +1,4 @@
-import ProductCard from "../ProductCard";
+import ProductCard from "./ProductCard";
 import { useAppSelector } from "store/hooks";
 import type { ProductItem } from "common/types";
 
