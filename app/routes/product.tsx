@@ -72,7 +72,7 @@ export default function Product({ params }: Route.ComponentProps) {
   }
 
   return (
-    <>
+    <main>
       <section className="product-main">
         <div className="product-gallery">
           <Carousel>
@@ -89,7 +89,7 @@ export default function Product({ params }: Route.ComponentProps) {
         </div>
         <div className="product-info">
           <div>
-            <h2>{product.name}</h2>
+            <h2 className="product-page-title">{product.name}</h2>
             <ProductRating reviews={reviews} />
           </div>
           <ProductOptions
@@ -164,6 +164,6 @@ export default function Product({ params }: Route.ComponentProps) {
           </Accordion.Item>
         </Accordion>
       </section>
-    </>
+    </main>
   );
 }
