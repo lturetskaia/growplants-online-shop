@@ -426,6 +426,10 @@ a.navbar-brand {
   display: none;
 }
 
+.delete-btn-div{
+  z-index: 1;
+}
+
 .cart-header {
   display: grid;
   direction: ltr;
