@@ -12,6 +12,7 @@ import type { Route } from "./+types/root";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./app.css";
 import Navbar from "../features/Navbar";
+import Footer from '../features/Footer';
 import {store} from "../store/reduxStore";
 import { Provider } from "react-redux";
 
@@ -53,6 +54,7 @@ export default function App() {
     <Provider store={store}>
       <Navbar />
         <Outlet />
+        <Footer/>
     </Provider>
   );
 }
