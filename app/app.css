@@ -124,7 +124,7 @@ ul {
 }
 
 .btn-outline-success {
-  --bs-btn-active-bg: #146941;
+  --bs-btn-active-bg: rgb(20, 105, 65);
 }
 
 .error-image {
@@ -198,7 +198,7 @@ a.navbar-brand {
   align-items: normal;
   gap: 1.5rem;
   flex-wrap: wrap;
-  padding: 0;
+  padding: 0 0 3rem 0;
   margin: 0;
 }
 
@@ -541,7 +541,8 @@ a.navbar-brand {
 footer {
   justify-items: center;
   align-content: center;
-  background-color: rgb(93, 110, 91);
+  /* background-color: rgb(93, 110, 91); */
+  background-color: rgb(20, 105, 65);
   height: 2.5rem;
 }
 
