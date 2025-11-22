@@ -2,7 +2,7 @@ import type { Route } from "../+types/root";
 import { useAppDispatch, useAppSelector } from "store/hooks";
 import ProductRating from "features/ProductRating";
 import ProductOptions from "features/ProductOptions";
-import { Button, Accordion } from "react-bootstrap";
+import { Button} from "react-bootstrap";
 import { useRef, useState } from "react";
 import type { ProductOption } from "common/types";
 import { cartSliceActions } from "features/Cart/cartSlice";
@@ -26,7 +26,6 @@ export default function Product({ params }: Route.ComponentProps) {
   const potsData = useAppSelector((state) => state.potsPlantersProducts);
 
   const [userQuantity, setUserQuantity] = useState(1);
-  const inputRef = useRef<HTMLInputElement>(null);
   const dispatch = useAppDispatch();
   const productCategory = params.productCategory;
   const productId = Number(params.productId);
