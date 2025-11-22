@@ -287,9 +287,8 @@ a.navbar-brand {
 
 .product-options {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
   margin: 0;
   padding: 0;
 }
