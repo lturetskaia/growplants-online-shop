@@ -3,7 +3,7 @@ import { useAppDispatch, useAppSelector } from "store/hooks";
 import ProductRating from "features/ProductRating";
 import ProductOptions from "features/ProductOptions";
 import { Button} from "react-bootstrap";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import type { ProductOption } from "common/types";
 import { cartSliceActions } from "features/Cart/cartSlice";
 import { getProductData } from "common/helperFunctions";
