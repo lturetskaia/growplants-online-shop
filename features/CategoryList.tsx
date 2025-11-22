@@ -1,5 +1,5 @@
 import { Button } from "react-bootstrap";
-import {NavLink} from "react-router";
+import { NavLink } from "react-router";
 import categoryList from "../backend/data/categoryList.json";
 
 export default function CategoryList() {
@@ -8,7 +8,9 @@ export default function CategoryList() {
       {categoryList.map((cat) => (
         <li className="category-item" key={cat.name}>
           <div className="category-image">
-            <img src={`/common/${cat.name}.jpg`} alt="The image showing .." />
+            <NavLink to={"/products/" + cat.name}>
+              <img src={`/common/${cat.name}.jpg`} alt="The image showing .." />
+            </NavLink>
           </div>
           <div className="category-description">
             <h2>{cat.name.replaceAll("-", " ").replace("and", "&")}</h2>
