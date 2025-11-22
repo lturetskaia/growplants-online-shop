@@ -11,6 +11,7 @@ This is a modern e-commerce website with responsive design that sells plants and
 - 🔒 TypeScript for safe typing
 - 🎉 React Bootstrap and CSS for styling
 - ⚡️ Vite for development and building
+- 💻 Local storage for persisting cart data 
 
 
 ## Have a look!
