@@ -2,12 +2,14 @@ import type { Route } from "../+types/root";
 import { useAppDispatch, useAppSelector } from "store/hooks";
 import ProductRating from "features/ProductRating";
 import ProductOptions from "features/ProductOptions";
-import { Carousel, Button, Accordion } from "react-bootstrap";
+import { Button, Accordion } from "react-bootstrap";
 import { useRef, useState } from "react";
-import type { ProductItem, ProductOption } from "common/types";
+import type { ProductOption } from "common/types";
 import { cartSliceActions } from "features/Cart/cartSlice";
 import { getProductData } from "common/helperFunctions";
 import QuantityInput from "features/QuantityInput";
+import ImageGallery from "features/ProductPage/ImageGallery";
+import ProductAccordion from "features/ProductPage/ProductAccordion";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -43,9 +45,6 @@ export default function Product({ params }: Route.ComponentProps) {
     product.options[0]
   );
 
-  const imagePath = `/products/${productCategory}/${product.image}`;
-  const altText = `The image of ${product.name}`;
-
   //Change quantity input using +/- buttons
   function handleChangeQuantity(option: string) {
     if (option === "increment" && userQuantity < currOption.quantity) {
@@ -80,19 +79,7 @@ export default function Product({ params }: Route.ComponentProps) {
   return (
     <main>
       <section className="product-main">
-        <div className="product-gallery">
-          <Carousel>
-            <Carousel.Item>
-              <img src={imagePath} alt={altText} />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img src={imagePath} alt={altText} />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img src={imagePath} alt={altText} />
-            </Carousel.Item>
-          </Carousel>
-        </div>
+        <ImageGallery product={product} />
         <div className="product-info">
           <div>
             <h2 className="product-page-title">{product.name}</h2>
@@ -133,46 +120,7 @@ export default function Product({ params }: Route.ComponentProps) {
       </section>
 
       <section className="product-details">
-        <Accordion defaultActiveKey="0" alwaysOpen>
-          <Accordion.Item eventKey="0">
-            <Accordion.Header>About</Accordion.Header>
-            <Accordion.Body>
-              {" "}
-              <p>{product.description} </p>
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="1">
-            <Accordion.Header>Delivery</Accordion.Header>
-            <Accordion.Body>
-              {" "}
-              <p>
-                <span>Packaging:</span> We pack all items using custom-designed
-                boxes with special compartments and supports to prevent movement
-                and damage, so your products arrive in perfect condition. Our
-                plant boxes are 100% recyclable, so they can be responsibly
-                disposed of without harming the planet.
-              </p>
-              <p>
-                <span>Quick delivery:</span> The standard delivery time for our
-                plants is 2-3 days. You can also choose next day delivery with
-                the same fee for any amount of plants & accessories.
-              </p>
-              <p>
-                <span>Plastic Nursery Pots:</span> All our plants are supplied
-                in practical plastic nursery pots. If you prefer a more
-                decorative option, we offer a range of stylish pots available
-                for purchase separately.
-              </p>
-              <p>
-                <span>Plant Pot Sizes:</span> Pot sizes may vary by +/- 1cm. To
-                ensure a proper fit, we recommend selecting a decorative
-                cachepot that is 1-2cm larger than the nursery pot size. For
-                instance, if you purchase a plant in a 15cm pot, a 16 - 17cm
-                decorative pot would be ideal.
-              </p>
-            </Accordion.Body>
-          </Accordion.Item>
-        </Accordion>
+        <ProductAccordion description={product.description}/>
       </section>
     </main>
   );
