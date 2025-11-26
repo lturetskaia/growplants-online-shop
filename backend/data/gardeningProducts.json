@@ -8,7 +8,7 @@
     "options": [
       {
         "option":  "red",
-        "quantity": 100,
+        "quantity": 0,
         "price": 4.5
       },
       {
@@ -17,7 +17,7 @@
         "price": 4.5
       }
     ],
-    "image": ["terracota-pot.jpg", "terracota-pot-white.jpg"]
+    "image": ["terracota-pot.jpg", "terracota-pot-white.png"]
   },
   {
     "id": 101,
@@ -52,7 +52,7 @@
         "price": 5.99
       }
     ],
-    "image": ["ceramic-glazed-pot-blue.jpg","ceramic-glazed-pot-blue-1.jpg","ceramic-glazed-pot-blue-2.jpg"]
+    "image": ["ceramic-glazed-pot-blue.jpg","ceramic-glazed-pot-blue-1.jpg","ceramic-glazed-pot-blue-2.png"]
   },
   {
     "id": 102,
@@ -87,7 +87,7 @@
         "price": 5.99
       }
     ],
-    "image": ["plastic-pot-grey.jpg", "plastic-pot-white.jpg", "plastic-pot-blue.jpg"]
+    "image": ["plastic-pot-grey.jpg", "plastic-pot-white.png", "plastic-pot-blue.png"]
   },
   {
     "id": 103,
@@ -388,7 +388,7 @@
     "id": 114,
     "category": "pots-and-planters",
     "type": "plant stand",
-    "name": "The Multi-Tiered Wooden Corner Plant Stand",
+    "name": "Multi-Tiered Wooden Corner Plant Stand",
     "description": "Maximize your plant display and corner space with our Multi-Tiered Wooden Corner Plant Stand. Crafted from beautiful, natural wood, this stand features multiple staggered shelves, creating an attractive tiered display for a variety of potted plants. Its clever corner design fits snugly into any unused space, turning a simple corner into a lush, green focal point. Perfect for organizing your plant collection and adding warmth and organic style to your home.",
     "options": [
       {
