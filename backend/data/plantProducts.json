@@ -22,7 +22,7 @@
         "price": 20.99
       }
     ],
-    "image": "monstera-albo.jpg"
+    "image": ["monstera-albo.jpg", "monstera-albo-1.jpg", "monstera-albo-2.jpg"]
   },
   {
     "id": 2,
@@ -47,7 +47,7 @@
         "price": 15.99
       }
     ],
-    "image": "epiprenum-aureum.jpg"
+    "image": ["epiprenum-aureum.jpg", "epiprenum-aureum-1.png", "epiprenum-aureum-2.png"]
   },
   {
     "id": 3,
@@ -72,7 +72,7 @@
         "price": 16.99
       }
     ],
-    "image": "calathea-makoyana.jpg"
+    "image": ["calathea-makoyana.jpg", "calathea-makoyana-1.jpg","calathea-makoyana-2.jpg"]
   },
   {
     "id": 4,
@@ -97,7 +97,7 @@
         "price": 17.99
       }
     ],
-    "image": "ficus-lyrata.png"
+    "image": ["ficus-lyrata.png", "ficus-lyrata-1.png", "ficus-lyrata-2.png"]
   },
   {
     "id": 5,
@@ -122,7 +122,7 @@
         "price": 20.99
       }
     ],
-    "image": "ficus-tineke.png"
+    "image": ["ficus-tineke.png"]
   },
   {
     "id": 6,
@@ -147,7 +147,7 @@
         "price": 14.99
       }
     ],
-    "image": "fittonia-red-tiger.png"
+    "image": ["fittonia-red-tiger.png","fittonia-red-tiger-1.png", "fittonia-red-tiger-2.png"]
   },
   {
     "id": 7,
@@ -172,7 +172,7 @@
         "price": 20.99
       }
     ],
-    "image": "alocasia-dragon-silver.png"
+    "image": ["alocasia-dragon-silver.png","alocasia-dragon-silver-1.jpg", "alocasia-dragon-silver-3.png"]
   },
   {
     "id": 8,
@@ -197,7 +197,7 @@
         "price": 15.99
       }
     ],
-    "image": "opuntia-microdasys.png"
+    "image": ["opuntia-microdasys.png","opuntia-microdasys-1.png","opuntia-microdasys-2.png"]
   },
   {
     "id": 9,
@@ -222,7 +222,7 @@
         "price": 20.99
       }
     ],
-    "image": "mammillaria-hahniana.png"
+    "image": ["mammillaria-hahniana.png","mammillaria-hahniana-1.png", "mammillaria-hahniana-2.png"]
   },
   {
     "id": 10,
@@ -247,7 +247,7 @@
         "price": 21.99
       }
     ],
-    "image": "cereus-repuvianus.png"
+    "image": ["cereus-repuvianus.png", "cereus-repuvianus-1.png"]
   },
   {
     "id": 11,
@@ -274,7 +274,7 @@
       }
     ],
     "isStock": false,
-    "image": "croton-variegated.png"
+    "image": ["croton-variegated.png", "croton-variegated-1.png", "croton-variegated-2.png"]
   },
   {
     "id": 12,
@@ -294,7 +294,7 @@
         "price": 25.99
       }
     ],
-    "image": "hydrangea-macrophylla.png"
+    "image": ["hydrangea-macrophylla.png","hydrangea-macrophylla-1.png"]
   },
   {
     "id": 13,
@@ -314,7 +314,7 @@
         "price": 25.99
       }
     ],
-    "image": "rose-rock-and-roll.png"
+    "image": ["rose-rock-and-roll.png","rose-rock-and-roll-1.png" ]
   },
   {
     "id": 14,
@@ -334,7 +334,7 @@
         "price": 25.99
       }
     ],
-    "image": "rose-iceberg.png"
+    "image": ["rose-iceberg.png", "rose-iceberg-1.png", "rose-iceberg-2.png"]
   },
   {
     "id": 15,
@@ -354,7 +354,7 @@
         "price": 20.99
       }
     ],
-    "image": "lavandula.png"
+    "image": ["lavandula.png","lavandula-1.png"]
   },
   {
     "id": 16,
@@ -374,7 +374,7 @@
         "price": 15.99
       }
     ],
-    "image": "cyclamen.png"
+    "image": ["cyclamen.png", "cyclamen-1.png"]
   },
   {
     "id": 17,
@@ -394,7 +394,7 @@
         "price": 14.99
       }
     ],
-    "image": "calluna-disco-queen.png"
+    "image": ["calluna-disco-queen.png", "calluna-disco-queen-1.png"]
   },
   {
     "id": 18,
@@ -414,7 +414,7 @@
         "price": 23.99
       }
     ],
-    "image": "chrysanthemums-yellow.jpg"
+    "image": ["chrysanthemums-yellow.jpg", "chrysanthemums-yellow-1.jpg", "chrysanthemums-yellow-2.png"]
   },
   {
     "id": 19,
@@ -434,7 +434,7 @@
         "price": 15.99
       }
     ],
-    "image": "petunia-indigo-vein.png"
+    "image": ["petunia-indigo-vein.png","petunia-indigo-vein-1.png", "petunia-indigo-vein-2.png"]
   },
   {
     "id": 20,
@@ -454,7 +454,7 @@
         "price": 25.99
       }
     ],
-    "image": "water-lily-pink.png"
+    "image": ["water-lily-pink.png", "water-lily-pink-1.png"]
   },
   {
     "id": 21,
@@ -474,7 +474,7 @@
         "price": 21.99
       }
     ],
-    "image": "cypress-goldcrest.png"
+    "image": ["cypress-goldcrest.png", "cypress-goldcrest-1.png" ]
   },
   {
     "id": 22,
@@ -494,7 +494,7 @@
         "price": 24.99
       }
     ],
-    "image": "hosta-june.png"
+    "image": ["hosta-june.png", "hosta-june-1.png"]
   },
   {
     "id": 23,
@@ -514,7 +514,7 @@
         "price": 25.99
       }
     ],
-    "image": "fuchsia-ballet-girl.png"
+    "image": ["fuchsia-ballet-girl.png", "fuchsia-ballet-girl-2.png"]
   },
   {
     "id": 24,
@@ -534,7 +534,7 @@
         "price": 15.99
       }
     ],
-    "image": "primula-cottage-cream.png"
+    "image": ["primula-cottage-cream.png", "primula-cottage-cream-1.png"]
   },
   {
     "id": 25,
@@ -554,7 +554,7 @@
         "price": 15.99
       }
     ],
-    "image": "primula-fire-dragon.png"
+    "image": ["primula-fire-dragon.png","primula-fire-dragon-1.png"]
   },
   {
     "id": 26,
@@ -574,7 +574,7 @@
         "price": 17.99
       }
     ],
-    "image": "pink-muhly-grass.png"
+    "image": ["pink-muhly-grass.png", "pink-muhly-grass-1.png"]
   },
   {
     "id": 27,
@@ -594,7 +594,7 @@
         "price": 26.99
       }
     ],
-    "image": "euonymus-emerald.png"
+    "image": ["euonymus-emerald.png", "euonymus-emerald-1.png", "euonymus-emerald-2.png"]
   },
   {
     "id": 28,
@@ -619,7 +619,7 @@
         "price": 20.99
       }
     ],
-    "image": "anturium-royal-red.png"
+    "image": ["anturium-royal-red.png","anturium-royal-red-1.png", "anturium-royal-red-2.png"]
   },
   {
     "id": 29,
@@ -644,7 +644,7 @@
         "price": 15.99
       }
     ],
-    "image": "saintpaulia-dark-blue.png"
+    "image": ["saintpaulia-dark-blue.png", "saintpaulia-dark-blue-1.png","saintpaulia-dark-blue-2.png"]
   },
   {
     "id": 30,
@@ -669,6 +669,6 @@
         "price": 21.99
       }
     ],
-    "image": "phal-mini-mark.png"
+    "image": ["phal-mini-mark.png", "phal-mini-mark-1.png", "phal-mini-mark-2.png"]
   }
 ]

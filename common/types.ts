@@ -11,7 +11,7 @@ export interface ProductItem {
   category: string;
   type: string;
   options: ProductOption[];
-  image: string;
+  image: string[];
 }
 
 export interface ProductReview {
