@@ -273,6 +273,7 @@ a.navbar-brand {
 
 .product-gallery img {
   width: 100%;
+  aspect-ratio: 1/1;
 }
 
 .product-info {
