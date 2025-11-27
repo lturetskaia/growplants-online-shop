@@ -5,8 +5,9 @@ export default function ProductRating({
 }: {
   reviews: ProductReviews;
 }) {
+  // placeholder values for rating and reviews
   let reviewsNumber = 0;
-  let rating = 4;
+  let rating = 5;
   if (reviews) {
     reviewsNumber = reviews.length;
     //calculate the rating

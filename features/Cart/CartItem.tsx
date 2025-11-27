@@ -35,7 +35,7 @@ export default function CartItem({ cartItem }: { cartItem: CartItem }) {
     productPrice = productOption?.price || 0;
     productQuantity = productOption?.quantity || 0;
 
-    imgPath = constructImgPath(cartItem.category, productData.image);
+    imgPath = constructImgPath(cartItem.category, productData.image[0]);
     altText = constructAltText(productData.name);
   }
 

@@ -7,7 +7,7 @@ body {
 main {
   padding: 3rem 0 0 0;
   width: 90%;
-  min-height: calc(100% - 4rem);
+  min-height: calc(100% - 4.3rem);
   max-width: 1300px;
   margin: 0 auto -2.5rem auto;
 }
@@ -124,15 +124,20 @@ ul {
 }
 
 .btn-outline-success {
-  --bs-btn-active-bg: #146941;
+  --bs-btn-active-bg: rgb(20, 105, 65);
 }
 
 .error-image {
   max-width: 200px;
 }
+ div.container {
+   background-color: rgb(231, 231, 231) !important;
+   border-radius: 6px;
+ }
 
 .bg-body-tertiary {
   background-color: rgb(231, 231, 231) !important;
+  border-bottom: 1px solid rgb(217, 216, 216);
 }
 
 nav span {
@@ -149,8 +154,9 @@ a.navbar-brand {
 
 .navbar {
   padding: 0;
-  height: 4rem;
+  height: 4.3rem;
 }
+
 .navbar-nav {
   gap: 1.5rem;
   margin-left: auto;
@@ -198,7 +204,7 @@ a.navbar-brand {
   align-items: normal;
   gap: 1.5rem;
   flex-wrap: wrap;
-  padding: 0;
+  padding: 0 0 3rem 0;
   margin: 0;
 }
 
@@ -272,6 +278,7 @@ a.navbar-brand {
 
 .product-gallery img {
   width: 100%;
+  aspect-ratio: 1/1;
 }
 
 .product-info {
@@ -286,9 +293,8 @@ a.navbar-brand {
 
 .product-options {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
   margin: 0;
   padding: 0;
 }
@@ -541,13 +547,14 @@ a.navbar-brand {
 footer {
   justify-items: center;
   align-content: center;
-  background-color: rgb(93, 110, 91);
+  background-color: rgb(231, 231, 231);
   height: 2.5rem;
+  border-top: 1px solid rgb(217, 216, 216);
 }
 
 footer p {
   margin: 0;
-  color: rgb(216, 238, 216);
+  color: rgb(4,79,54);
   font-size: 0.9rem;
 }
 

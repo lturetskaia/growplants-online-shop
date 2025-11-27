@@ -1,11 +1,16 @@
 import { Button } from "react-bootstrap";
 import { Link } from "react-router";
 import type { ProductItem } from "common/types";
+import { constructImgPath, constructURLPath, constructAltText } from "common/helperFunctions";
 
 export default function ProductCard({ product }: { product: ProductItem }) {
-  const imagePath = `/products/${product.category}/${product.image}`;
-  const altText = `The image of ${product.name}`;
-  const urlPath = `/products/${product.category}/${product.id}`;
+const imagePath = constructImgPath(product.category, product.image[0]);
+console.log(product.image[0]);
+  const altText = constructAltText(product.name);
+  const urlPath = constructURLPath(product.id, product.category);
+  // const imagePath = `/products/${product.category}/${product.image[0]}`;
+  // const altText = `The image of ${product.name}`;
+  // const urlPath = `/products/${product.category}/${product.id}`;
 
   //find minimum item price
   const startPrice = product.options[0].price;

@@ -8,7 +8,7 @@
     "options": [
       {
         "option":  "red",
-        "quantity": 100,
+        "quantity": 0,
         "price": 4.5
       },
       {
@@ -17,7 +17,7 @@
         "price": 4.5
       }
     ],
-    "image": "terracota-pot.jpg"
+    "image": ["terracota-pot.jpg", "terracota-pot-white.png"]
   },
   {
     "id": 101,
@@ -52,7 +52,7 @@
         "price": 5.99
       }
     ],
-    "image": "ceramic-glazed-pot-blue.jpg"
+    "image": ["ceramic-glazed-pot-blue.jpg","ceramic-glazed-pot-blue-1.jpg","ceramic-glazed-pot-blue-2.png"]
   },
   {
     "id": 102,
@@ -87,7 +87,7 @@
         "price": 5.99
       }
     ],
-    "image": "plastic-pot-grey.jpg"
+    "image": ["plastic-pot-grey.jpg", "plastic-pot-white.png", "plastic-pot-blue.png"]
   },
   {
     "id": 103,
@@ -112,7 +112,7 @@
         "price": 5.99
       }
     ],
-    "image": "concrete-pot-white.jpg"
+    "image": ["concrete-pot-white.jpg", "concrete-pot-white-1.jpg"]
   },
   {
     "id": 104,
@@ -147,7 +147,7 @@
         "price": 5.99
       }
     ],
-    "image": "self-watering-pot-charcoal.jpg"
+    "image": ["self-watering-pot-charcoal.jpg", "self-watering-pot-white.png"]
   },
   {
     "id": 105,
@@ -182,7 +182,7 @@
         "price": 5.99
       }
     ],
-    "image": "classic-ceramic-cachepot.jpg"
+    "image": ["classic-ceramic-cachepot.jpg", "classic-ceramic-cachepot-1.png", "classic-ceramic-cachepot-2.png"]
   },
   {
     "id": 106,
@@ -202,7 +202,7 @@
         "price": 5.99
       }
     ],
-    "image": "terracota-cachepot.jpg"
+    "image": ["terracota-cachepot.jpg","terracota-cachepot-beige.png"]
   },
   {
     "id": 107,
@@ -227,7 +227,7 @@
         "price": 5.99
       }
     ],
-    "image": "metallic-cachepot.jpg"
+    "image": ["metallic-cachepot.jpg", "metallic-cachepot-1.jpg","metallic-cachepot-2.png"]
   },
   {
     "id": 108,
@@ -252,7 +252,7 @@
         "price": 5.99
       }
     ],
-    "image": "woven-basket-cachepot.jpg"
+    "image": ["woven-basket-cachepot.jpg", "woven-basket-cachepot-white.jpg","woven-basket-cachepot-brown.png"]
   },
   {
     "id": 109,
@@ -277,7 +277,7 @@
         "price": 5.99
       }
     ],
-    "image": "concrete-cachepot.jpg"
+    "image": ["concrete-cachepot.jpg", "concrete-cachepot-1.jpg", "concrete-cachepot-2.png"]
   },
   {
     "id": 110,
@@ -307,7 +307,7 @@
         "price": 10.5
       }
     ],
-    "image": "wooden-window-box.jpg"
+    "image": ["wooden-window-box.jpg", "wooden-window-box-black.jpg", "wooden-window-box-white.png"]
   },
   {
     "id": 111,
@@ -332,7 +332,7 @@
         "price": 25.99
       }
     ],
-    "image": "galvanized-planter.jpg"
+    "image": ["galvanized-planter.jpg", "galvanized-planter-1.png"]
   },
   {
     "id": 112,
@@ -357,7 +357,7 @@
         "price": 20.99
       }
     ],
-    "image": "tall-planter.jpg"
+    "image": ["tall-planter.jpg", "tall-planter-white.png"]
   },
   {
     "id": 113,
@@ -382,13 +382,13 @@
         "price": 18.99
       }
     ],
-    "image": "metal-plant-stand.jpg"
+    "image": ["metal-plant-stand.jpg","metal-plant-stand-white.png", "metal-plant-stand-oak.png"]
   },
   {
     "id": 114,
     "category": "pots-and-planters",
     "type": "plant stand",
-    "name": "The Multi-Tiered Wooden Corner Plant Stand",
+    "name": "Multi-Tiered Wooden Corner Plant Stand",
     "description": "Maximize your plant display and corner space with our Multi-Tiered Wooden Corner Plant Stand. Crafted from beautiful, natural wood, this stand features multiple staggered shelves, creating an attractive tiered display for a variety of potted plants. Its clever corner design fits snugly into any unused space, turning a simple corner into a lush, green focal point. Perfect for organizing your plant collection and adding warmth and organic style to your home.",
     "options": [
       {
@@ -407,6 +407,6 @@
         "price": 25.99
       }
     ],
-    "image": "multi-wooden-plat-stand.jpg"
+    "image": ["multi-wooden-plat-stand.jpg", "multi-wooden-plat-stand-white.png"]
   }
 ]
