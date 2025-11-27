@@ -7,7 +7,7 @@ body {
 main {
   padding: 3rem 0 0 0;
   width: 90%;
-  min-height: calc(100% - 4rem);
+  min-height: calc(100% - 4.3rem);
   max-width: 1300px;
   margin: 0 auto -2.5rem auto;
 }
@@ -130,6 +130,10 @@ ul {
 .error-image {
   max-width: 200px;
 }
+ div.container {
+   background-color: rgb(231, 231, 231) !important;
+   border-radius: 6px;
+ }
 
 .bg-body-tertiary {
   background-color: rgb(231, 231, 231) !important;
@@ -150,8 +154,9 @@ a.navbar-brand {
 
 .navbar {
   padding: 0;
-  height: 4rem;
+  height: 4.3rem;
 }
+
 .navbar-nav {
   gap: 1.5rem;
   margin-left: auto;
