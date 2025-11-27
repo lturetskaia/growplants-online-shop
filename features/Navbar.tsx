@@ -1,6 +1,6 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import NavB from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/cjs/Container.js";
+import Nav from "react-bootstrap/cjs/Nav.js";
+import NavB from "react-bootstrap/cjs/Navbar.js";
 import { NavLink} from "react-router";
 import CartBadge from "./Cart/CartBadge";
 
