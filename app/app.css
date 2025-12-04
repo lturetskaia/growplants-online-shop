@@ -132,6 +132,7 @@ ul {
 }
 div.container {
   background-color: rgb(231, 231, 231) !important;
+  z-index: 2;
   border-radius: 6px;
 }
 
