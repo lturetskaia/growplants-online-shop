@@ -63,7 +63,7 @@ export default function CartItem({ cartItem }: { cartItem: CartItem }) {
   return (
     <li className="cart-item">
       <div className={cartOverlayClass}></div>
-      <div>
+      <div className="cart-item-img">
         <Link to={urlPath}>
           <img src={imgPath} alt={altText} />
         </Link>
@@ -90,7 +90,7 @@ export default function CartItem({ cartItem }: { cartItem: CartItem }) {
           handleChangeQuantity={handleChangeQuantity}
         />
       </div>
-      <div className={productQuantity === 0 ? "strikethrough" : ""}>
+      <div className={productQuantity === 0 ? "cart-item-tprice strikethrough" : "cart-item-tprice"}>
         &pound;{(cartItem.quantity * productPrice).toFixed(2)}
       </div>
       <div className="delete-btn-div">
