@@ -130,10 +130,11 @@ ul {
 .error-image {
   max-width: 200px;
 }
- div.container {
-   background-color: rgb(231, 231, 231) !important;
-   border-radius: 6px;
- }
+div.container {
+  background-color: rgb(231, 231, 231) !important;
+  z-index: 2;
+  border-radius: 6px;
+}
 
 .bg-body-tertiary {
   background-color: rgb(231, 231, 231) !important;
@@ -164,10 +165,21 @@ a.navbar-brand {
   padding: 0.8rem 0;
 }
 
+.navbar-toggler {
+
+}
+
 .nav-icon {
   height: 2.2rem;
 }
 
+.navbar-brand {
+  margin: 0;
+}
+
+#nav-brand-mobile {
+  display: none;
+}
 #cart-badge {
   width: fit-content;
   position: absolute;
@@ -194,6 +206,10 @@ a.navbar-brand {
 }
 
 #cart-badge .visually-hidden {
+  display: none;
+}
+
+.hidden-menu-item {
   display: none;
 }
 
@@ -554,7 +570,7 @@ footer {
 
 footer p {
   margin: 0;
-  color: rgb(4,79,54);
+  color: rgb(4, 79, 54);
   font-size: 0.9rem;
 }
 
@@ -567,6 +583,22 @@ footer p {
 
   .category-item {
     width: 35%;
+  }
+}
+@media (max-width: 991px) {
+  #nav-brand {
+    display: none;
+  }
+
+  #nav-brand-mobile {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    margin-left: 5rem;
+  }
+
+  .container {
+    padding: 1rem;
   }
 }
 
