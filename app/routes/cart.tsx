@@ -75,7 +75,7 @@ export default function Cart() {
               <div>Item</div>
               <div>Price</div>
               <div>Quantity</div>
-              <div>Total price</div>
+              <div className="cart-h-tprice">Total price</div>
             </li>
             {cartData.map((cartItem) => (
               <CartItem

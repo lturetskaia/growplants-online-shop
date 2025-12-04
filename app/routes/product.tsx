@@ -108,11 +108,11 @@ export default function Product({ params }: Route.ComponentProps) {
                   {currOption.quantity > 0 ? "Add to cart" : "Out of stock"}
                 </Button>
               </div>
-              <img
+              {/* <img
                 className="like-btn"
                 src="/icons/heart-like-icon.svg"
                 alt="Add to wish list icon"
-              />
+              /> */}
             </div>
           </div>
         </div>
