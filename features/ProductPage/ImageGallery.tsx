@@ -12,12 +12,6 @@ export default function ImageGallery({ product }: { product: ProductItem }) {
         {imagePaths.map(img => <Carousel.Item key={img}>
           <img src={img} alt={altText} />
         </Carousel.Item>)}
-        {/* <Carousel.Item>
-          <img src={imagePath} alt={altText} />
-        </Carousel.Item> */}
-        {/* <Carousel.Item>
-          <img src={imagePath} alt={altText} />
-        </Carousel.Item> */}
         <Carousel.Item>
           <img
             src={`/common/plant-size.png`}

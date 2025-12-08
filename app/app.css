@@ -450,7 +450,6 @@ a.navbar-brand {
 
 .product-option-item.empty {
   border: transparent;
-  /* min-width: 100px; */
   width: 0px;
   padding: 0;
 }

@@ -7,9 +7,6 @@ export default function ProductCard({ product }: { product: ProductItem }) {
 const imagePath = constructImgPath(product.category, product.image[0]);
   const altText = constructAltText(product.name);
   const urlPath = constructURLPath(product.id, product.category);
-  // const imagePath = `/products/${product.category}/${product.image[0]}`;
-  // const altText = `The image of ${product.name}`;
-  // const urlPath = `/products/${product.category}/${product.id}`;
 
   //find minimum item price
   const startPrice = product.options[0].price;
