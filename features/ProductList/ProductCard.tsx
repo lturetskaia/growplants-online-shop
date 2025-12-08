@@ -5,7 +5,6 @@ import { constructImgPath, constructURLPath, constructAltText } from "common/hel
 
 export default function ProductCard({ product }: { product: ProductItem }) {
 const imagePath = constructImgPath(product.category, product.image[0]);
-console.log(product.image[0]);
   const altText = constructAltText(product.name);
   const urlPath = constructURLPath(product.id, product.category);
   // const imagePath = `/products/${product.category}/${product.image[0]}`;

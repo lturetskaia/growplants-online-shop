@@ -3,17 +3,51 @@ import Nav from "react-bootstrap/cjs/Nav.js";
 import NavB from "react-bootstrap/cjs/Navbar.js";
 import { NavLink } from "react-router";
 import CartBadge from "./Cart/CartBadge";
+import { useEffect, useRef, useState } from "react";
 
 export default function Navbar() {
+  const [isExpanded, setIsExpanded] = useState<boolean>(false);
+  const menuContainer = useRef<HTMLDivElement | null>(null);
+  const mobileMenu = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    function handleOutsideClick(event: MouseEvent) {
+      const targetEl = event.target as HTMLElement;
+
+      //collapses the menu when clicking outside of the menu container element
+      if (
+        menuContainer.current &&
+        !menuContainer.current.contains(targetEl) &&
+        mobileMenu.current &&
+        mobileMenu.current?.classList.contains("show")
+      ) {
+        setIsExpanded(false);
+      }
+    }
+
+    document.addEventListener("click", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, [menuContainer,mobileMenu]);
+
   return (
-    <NavB collapseOnSelect expand="lg" className="bg-body-tertiary">
+    <NavB
+      ref={menuContainer}
+      collapseOnSelect
+      expand="lg"
+      expanded={isExpanded}
+      className="bg-body-tertiary"
+      onToggle={() => setIsExpanded(!isExpanded)} // controls clicking the toggle
+    >
       <Container>
         <NavB.Brand href="/" id="nav-brand">
           <img src="/icons/growplants-icon.png" className="nav-icon" />
           <span>GrowPlants</span>
         </NavB.Brand>
         <NavB.Toggle aria-controls="responsive-navbar-nav" />
-        <NavB.Collapse id="responsive-navbar-nav">
+        <NavB.Collapse ref={mobileMenu} id="responsive-navbar-nav">
           <Nav className="me-auto" variant="underline">
             <Nav.Link as={NavLink} to="/" href="/">
               Home
