@@ -72,6 +72,7 @@ ul {
   flex-direction: column;
   border: 1px solid rgb(231, 231, 231);
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .category-description {
@@ -83,6 +84,7 @@ ul {
 .category-item div {
   justify-items: center;
   align-content: center;
+  text-align: center;
 }
 
 .category-item img {
@@ -577,6 +579,7 @@ footer {
 }
 
 footer p {
+  text-align: center;
   margin: 0;
   color: rgb(4, 79, 54);
   font-size: 0.9rem;
